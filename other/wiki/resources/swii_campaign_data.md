@@ -1,14 +1,14 @@
 - **level**: 
-	- **title**: "Tutorial" 
-	- **number**: "1" 
-	- **map**: "2" 
-	- **story**: "Many of the empires you previously controlled are now rebels that have fled to the outskirts of their homelands. You are faced with the threat of attack. Speartons have rebuilt and declared war against your diminished army." 
-	- **controller**: "CampaignTutorial" 
-	- **points**: "1"
+	- **title**: "Tutorial"
+	- **number**: "1"
+	- **map**: "2"
+	- **story**: "Many of the empires you previously controlled are now rebels that have fled to the outskirts of their homelands. You are faced with the threat of attack. Speartons have rebuilt and declared war against your diminished army."
+	- **controller**: "CampaignTutorial"
+	- **points**: "1
 
 	- **player**: 
 		- **race**: "Order"
-		- **statueHealth**: "1500" 
+		- **statueHealth**: "1500"
 		- **unit**: Swordwrath
 	
 	- **oponent**:  
@@ -25,11 +25,11 @@
 	- **tip**: Tip: You must out number the more powerful enemy.
 
 - **level**: 
-- **title**: "Blot out the sun: Archidons Declare War" 
-- **number**: "2" 
-- **map**: "4" 
-- **story**: "The Archidon Empire wants revenge and their land back.  They have declared war against your Empire." 
-- **controller**: "CampaignArcher" 
+	- **title**: "Blot out the sun: Archidons Declare War" 
+	- **number**: "2" 
+	- **map**: "4" 
+	- **story**: "The Archidon Empire wants revenge and their land back.  They have declared war against your Empire." 
+	- **controller**: "CampaignArcher" 
 - **points**: "1"
 	- **unlock**: Spearton
 	- **normal**: 1.8

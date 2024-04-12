@@ -1,1966 +1,1965 @@
-- **GameConstants**: 
-	- **isTesting**: 0
-	- **debug**: 0
-	- **elementalsEnabled**: 1
-	- **isKongregate**: 0
-	- **campaignDebug**: 1
-	- **campaignVersion**: 1.24
-	- **isAlpha**: 1
-	- **hasArmory**: 1
-	- **skipToLevel**: 6
-	- **campaignDifficulty**: 1
-	- **isFogOfWar**: 1
-	- **debugTeamA**: Order
-	- **debugTeamB**: Order
-	- **version**: 2.29
-	- **gravity**: 0.45
-	- **worldScale**: 1
-	- **frontScale**: .8
-	- **backScale**: .5
-	- **goldAtStartOfMap**: 3500
-	- **sandboxMap**: 2
-	- **testServer**: 54.163.144.214
-	- **mainServer**: 23.23.246.201
-	- **battlefieldHeight**: 250
-	- **battlefieldY**: 320
-	- **maxWorshipers**: 6
-	- **toolBoxShowTime**: 1
-	- **startingGold**: 500
-	- **startingMana**: 0
-	- **visionSize**: 1200
-	- **populationLimit**: 80
-	- **passiveIncome**: 0
-	- **passiveMana**: 0
-	- **passiveIncomeUpgraded1**: 5
-	- **passiveIncomeUpgraded2**: 10
-	- **passiveIncomeUpgraded3**: 20
-	- **passiveManaUpgraded1**: 3.5
-	- **passiveManaUpgraded2**: 7
-	- **passiveManaUpgraded3**: 14
-	- **towerCaptureTime**: 300
-	- **garrisonHealRate**: .15
-	- **towerSpawnDelay**: 750
-	- **incomeDisplay**: 
-		- **time**: 120
+- **isTesting**: 0
+- **debug**: 0
+- **elementalsEnabled**: 1
+- **isKongregate**: 0
+- **campaignDebug**: 1
+- **campaignVersion**: 1.24
+- **isAlpha**: 1
+- **hasArmory**: 1
+- **skipToLevel**: 6
+- **campaignDifficulty**: 1
+- **isFogOfWar**: 1
+- **debugTeamA**: Order
+- **debugTeamB**: Order
+- **version**: 2.29
+- **gravity**: 0.45
+- **worldScale**: 1
+- **frontScale**: .8
+- **backScale**: .5
+- **goldAtStartOfMap**: 3500
+- **sandboxMap**: 2
+- **testServer**: 54.163.144.214
+- **mainServer**: 23.23.246.201
+- **battlefieldHeight**: 250
+- **battlefieldY**: 320
+- **maxWorshipers**: 6
+- **toolBoxShowTime**: 1
+- **startingGold**: 500
+- **startingMana**: 0
+- **visionSize**: 1200
+- **populationLimit**: 80
+- **passiveIncome**: 0
+- **passiveMana**: 0
+- **passiveIncomeUpgraded1**: 5
+- **passiveIncomeUpgraded2**: 10
+- **passiveIncomeUpgraded3**: 20
+- **passiveManaUpgraded1**: 3.5
+- **passiveManaUpgraded2**: 7
+- **passiveManaUpgraded3**: 14
+- **towerCaptureTime**: 300
+- **garrisonHealRate**: .15
+- **towerSpawnDelay**: 750
+- **incomeDisplay**: 
+	- **time**: 120
+- *
+- **hill**: 
+	- **goldCollectionRate**: 20
+	- **manaCollectionRate**: 20
+	- **frequency**: 120
+- *
+- **screenScrollSpeed**: 35
+- **screenScrollGain**: 0.3
+- **Commands**: 
+	- **move**: 
+		- **name**: Move Command (M)
+		- **info**: Moves a unit to specified location without attacking units in the path
+		- **hotkey**: 68
+		- **gold**: 0
+		- **mana**: 0
+		- **effect**: 0
+		- **cooldown**: 0
 	- *
-	- **hill**: 
-		- **goldCollectionRate**: 20
-		- **manaCollectionRate**: 20
-		- **frequency**: 120
+	- **attackMove**: 
+		- **name**: Attack Move Command (A)
+		- **info**: Moves to a specified location and attacks units that are in the path
+		- **hotkey**: 65
+		- **gold**: 0
+		- **mana**: 0
+		- **effect**: 0
+		- **cooldown**: 0
 	- *
-	- **screenScrollSpeed**: 35
-	- **screenScrollGain**: 0.3
-	- **Commands**: 
-		- **move**: 
-			- **name**: Move Command (M)
-			- **info**: Moves a unit to specified location without attacking units in the path
-			- **hotkey**: 68
-			- **gold**: 0
-			- **mana**: 0
-			- **effect**: 0
-			- **cooldown**: 0
+	- **hold**: 
+		- **name**: Hold Command (H)
+		- **info**: Unit is unable to move but is able to attack units in reach
+		- **hotkey**: 72
+		- **gold**: 0
+		- **mana**: 0
+		- **effect**: 0
+		- **cooldown**: 0
+	- *
+	- **stand**: 
+		- **name**: Stand Command (S)
+		- **info**: Cancels current command
+		- **hotkey**: 83
+		- **gold**: 0
+		- **mana**: 0
+		- **effect**: 0
+		- **cooldown**: 0
+	- *
+	- **garrison**: 
+		- **name**: Garrison Command (G)
+		- **info**: Garrison unit inside castle
+		- **hotkey**: 71
+		- **gold**: 0
+		- **mana**: 0
+		- **effect**: 0
+		- **cooldown**: 0
+	- *
+	- **ungarrison**: 
+		- **name**: Ungarrison Command (U)
+		- **info**: Ungarrison unit from castle
+		- **hotkey**: 85
+		- **gold**: 0
+		- **mana**: 0
+		- **effect**: 0
+		- **cooldown**: 0
+	- *
+- *
+- **Chaos**: 
+	- **healRate**: .033
+	- **poisonDuration**: 500
+	- **maxTowers**: 2
+	- **Tech**: 
+		- **towerSpawnI**: 
+			- **name**: Tower Spawn I
+			- **cost**: 600
+			- **mana**: 200
+			- **effect**: 1
+			- **time**: 800
+			- **tip**: Spawn an uncontrolled ghostly unit from the center tower for no cost or population.
 		- *
-		- **attackMove**: 
-			- **name**: Attack Move Command (A)
-			- **info**: Moves to a specified location and attacks units that are in the path
-			- **hotkey**: 65
-			- **gold**: 0
-			- **mana**: 0
-			- **effect**: 0
-			- **cooldown**: 0
+		- **towerSpawnII**: 
+			- **name**: Tower Spawn II
+			- **cost**: 2000
+			- **mana**: 1000
+			- **effect**: 1
+			- **time**: 1200
+			- **tip**: Spawn a more powerfull  uncontrolled ghostly unit from the center tower for no cost or population.
 		- *
-		- **hold**: 
-			- **name**: Hold Command (H)
-			- **info**: Unit is unable to move but is able to attack units in reach
-			- **hotkey**: 72
-			- **gold**: 0
+		- **minerTower**: 
+			- **name**: Miner Tower Upgrade
+			- **cost**: 100
 			- **mana**: 0
-			- **effect**: 0
-			- **cooldown**: 0
+			- **effect**: 1
+			- **time**: 900
+			- **tip**: Allows miner to construct a static tower that automatically attacks the enemy.
 		- *
-		- **stand**: 
-			- **name**: Stand Command (S)
-			- **info**: Cancels current command
-			- **hotkey**: 83
-			- **gold**: 0
-			- **mana**: 0
-			- **effect**: 0
-			- **cooldown**: 0
+		- **statueHealth**: 
+			- **name**: Statue health
+			- **cost**: 50
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Increase statue health.
 		- *
-		- **garrison**: 
-			- **name**: Garrison Command (G)
-			- **info**: Garrison unit inside castle
-			- **hotkey**: 71
-			- **gold**: 0
-			- **mana**: 0
-			- **effect**: 0
-			- **cooldown**: 0
+		- **passiveIncomeGold1**: 
+			- **name**: Passive Income Gold I
+			- **cost**: 150
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Passively gain a small amount of gold and mana every few seconds.
 		- *
-		- **ungarrison**: 
-			- **name**: Ungarrison Command (U)
-			- **info**: Ungarrison unit from castle
-			- **hotkey**: 85
-			- **gold**: 0
+		- **passiveIncomeGold2**: 
+			- **name**: Passive Income Gold II
+			- **cost**: 150
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Passively gain a small amount of gold and mana every few seconds.
+		- *
+		- **passiveIncomeGold3**: 
+			- **name**: Passive Income Gold III
+			- **cost**: 150
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Passively gain a small amount of gold and mana every few seconds.
+		- *
+		- **passiveIncomeMana**: 
+			- **name**: Passive Income Gold
+			- **cost**: 50
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: default tip
+		- *
+		- **wingidonSpeed**: 
+			- **name**: Speed
+			- **cost**: 100
+			- **mana**: 100
+			- **tip**: 
+			- **time**: 30
+		- *
+		- **deadPoison**: 
+			- **name**: Poison Guts
+			- **tip**: Deads can toggle on and off the ability to have their projectiles inflict poison.
+			- **cost**: 300
 			- **mana**: 0
-			- **effect**: 0
-			- **cooldown**: 0
+			- **time**: 600
+		- *
+		- **catPack**: 
+			- **name**: Pack Mentality
+			- **tip**: Increasing the amount of Crawlers in your army will increase the damage of all Crawlers.
+			- **cost**: 50
+			- **mana**: 100
+			- **time**: 1800
+		- *
+		- **giantSize1**: 
+			- **name**: Giant Growth I
+			- **cost**: 200
+			- **mana**: 200
+			- **effect**: 1
+			- **time**: 1200
+			- **tip**: Your Giants will increase in size and health.
+		- *
+		- **giantSize2**: 
+			- **name**: Giant Growth II
+			- **cost**: 400
+			- **mana**: 400
+			- **effect**: 1
+			- **time**: 1800
+			- **tip**: Your Giants will increase in size and health dramatically.
+		- *
+		- **castleArchers**: 
+			- **num**: 4
+		- *
+		- **castleArchers1**: 
+			- **name**: Castle Dead I
+			- **tip**: An untargetable powerful Dead will appear high on your castle walls out of reach from the enemy.
+			- **num**: 5
+			- **cost**: 300
+			- **mana**: 0
+			- **time**: 300
+		- *
+		- **castleArchers2**: 
+			- **name**: Castle Dead level II
+			- **tip**: A 2nd untargetable powerful Dead will appear high on your castle walls out of reach from the enemy.
+			- **num**: 5
+			- **cost**: 600
+			- **mana**: 0
+			- **time**: 500
+		- *
+		- **castleArchers3**: 
+			- **name**: Castle Archer
+			- **tip**: A 3rd untargetable powerful Dead will appear high on your castle walls out of reach from the enemy.
+			- **num**: 5
+			- **cost**: 1000
+			- **mana**: 0
+			- **time**: 700
+		- *
+		- **castleArchers4**: 
+			- **name**: Castle Archer
+			- **tip**: Defensive castle archer that outranges all units
+			- **num**: 5
+			- **cost**: 600
+			- **mana**: 0
+			- **time**: 800
+		- *
+		- **castleArchers5**: 
+			- **name**: Castle Archer
+			- **tip**: Defensive castle archer that outranges all units
+			- **num**: 5
+			- **cost**: 700
+			- **mana**: 0
+			- **time**: 900
+		- *
+		- **medusaPoison**: 
+			- **name**: Venom Flux
+			- **tip**: Medusa and head of snakes spit a grotesk pool of poison on the ground.
+			- **num**: 5
+			- **cost**: 200
+			- **mana**: 0
+			- **time**: 900
+		- *
+		- **knightCharge**: 
+			- **name**: Charge
+			- **tip**: Jugger Knight will charge forward smashing into units.
+			- **num**: 5
+			- **cost**: 50
+			- **mana**: 100
+			- **time**: 1200
+		- *
+		- **skeletonFistAttack**: 
+			- **name**: Hell Fists
+			- **tip**: A powerful line of fists will smash up from the ground causing instant damage to anything in its path.
+			- **num**: 5
+			- **cost**: 50
+			- **mana**: 100
+			- **time**: 1200
+		- *
+		- **catSpeed**: 
+			- **name**: Predatory Edge
+			- **tip**: Massive run speed increase for Crawlers.
+			- **num**: 5
+			- **cost**: 50
+			- **mana**: 100
+			- **time**: 1800
 		- *
 	- *
-	- **Chaos**: 
-		- **healRate**: .033
-		- **poisonDuration**: 500
-		- **maxTowers**: 2
-		- **Tech**: 
-			- **towerSpawnI**: 
-				- **name**: Tower Spawn I
-				- **cost**: 600
-				- **mana**: 200
-				- **effect**: 1
-				- **time**: 800
-				- **tip**: Spawn an uncontrolled ghostly unit from the center tower for no cost or population.
-			- *
-			- **towerSpawnII**: 
-				- **name**: Tower Spawn II
-				- **cost**: 2000
-				- **mana**: 1000
-				- **effect**: 1
-				- **time**: 1200
-				- **tip**: Spawn a more powerfull  uncontrolled ghostly unit from the center tower for no cost or population.
-			- *
-			- **minerTower**: 
-				- **name**: Miner Tower Upgrade
-				- **cost**: 100
-				- **mana**: 0
-				- **effect**: 1
-				- **time**: 900
-				- **tip**: Allows miner to construct a static tower that automatically attacks the enemy.
-			- *
-			- **statueHealth**: 
-				- **name**: Statue health
-				- **cost**: 50
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Increase statue health.
-			- *
-			- **passiveIncomeGold1**: 
-				- **name**: Passive Income Gold I
-				- **cost**: 150
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Passively gain a small amount of gold and mana every few seconds.
-			- *
-			- **passiveIncomeGold2**: 
-				- **name**: Passive Income Gold II
-				- **cost**: 150
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Passively gain a small amount of gold and mana every few seconds.
-			- *
-			- **passiveIncomeGold3**: 
-				- **name**: Passive Income Gold III
-				- **cost**: 150
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Passively gain a small amount of gold and mana every few seconds.
-			- *
-			- **passiveIncomeMana**: 
-				- **name**: Passive Income Gold
-				- **cost**: 50
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: default tip
-			- *
-			- **wingidonSpeed**: 
-				- **name**: Speed
-				- **cost**: 100
-				- **mana**: 100
-				- **tip**: 
-				- **time**: 30
-			- *
-			- **deadPoison**: 
-				- **name**: Poison Guts
-				- **tip**: Deads can toggle on and off the ability to have their projectiles inflict poison.
-				- **cost**: 300
-				- **mana**: 0
-				- **time**: 600
-			- *
-			- **catPack**: 
-				- **name**: Pack Mentality
-				- **tip**: Increasing the amount of Crawlers in your army will increase the damage of all Crawlers.
-				- **cost**: 50
-				- **mana**: 100
-				- **time**: 1800
-			- *
-			- **giantSize1**: 
-				- **name**: Giant Growth I
-				- **cost**: 200
-				- **mana**: 200
-				- **effect**: 1
-				- **time**: 1200
-				- **tip**: Your Giants will increase in size and health.
-			- *
-			- **giantSize2**: 
-				- **name**: Giant Growth II
-				- **cost**: 400
-				- **mana**: 400
-				- **effect**: 1
-				- **time**: 1800
-				- **tip**: Your Giants will increase in size and health dramatically.
-			- *
-			- **castleArchers**: 
-				- **num**: 4
-			- *
-			- **castleArchers1**: 
-				- **name**: Castle Dead I
-				- **tip**: An untargetable powerful Dead will appear high on your castle walls out of reach from the enemy.
-				- **num**: 5
-				- **cost**: 300
-				- **mana**: 0
-				- **time**: 300
-			- *
-			- **castleArchers2**: 
-				- **name**: Castle Dead level II
-				- **tip**: A 2nd untargetable powerful Dead will appear high on your castle walls out of reach from the enemy.
-				- **num**: 5
-				- **cost**: 600
-				- **mana**: 0
-				- **time**: 500
-			- *
-			- **castleArchers3**: 
-				- **name**: Castle Archer
-				- **tip**: A 3rd untargetable powerful Dead will appear high on your castle walls out of reach from the enemy.
-				- **num**: 5
-				- **cost**: 1000
-				- **mana**: 0
-				- **time**: 700
-			- *
-			- **castleArchers4**: 
-				- **name**: Castle Archer
-				- **tip**: Defensive castle archer that outranges all units
-				- **num**: 5
-				- **cost**: 600
-				- **mana**: 0
-				- **time**: 800
-			- *
-			- **castleArchers5**: 
-				- **name**: Castle Archer
-				- **tip**: Defensive castle archer that outranges all units
-				- **num**: 5
-				- **cost**: 700
-				- **mana**: 0
-				- **time**: 900
-			- *
-			- **medusaPoison**: 
-				- **name**: Venom Flux
-				- **tip**: Medusa and head of snakes spit a grotesk pool of poison on the ground.
-				- **num**: 5
-				- **cost**: 200
-				- **mana**: 0
-				- **time**: 900
-			- *
-			- **knightCharge**: 
-				- **name**: Charge
-				- **tip**: Jugger Knight will charge forward smashing into units.
-				- **num**: 5
-				- **cost**: 50
-				- **mana**: 100
-				- **time**: 1200
-			- *
-			- **skeletonFistAttack**: 
-				- **name**: Hell Fists
-				- **tip**: A powerful line of fists will smash up from the ground causing instant damage to anything in its path.
-				- **num**: 5
-				- **cost**: 50
-				- **mana**: 100
-				- **time**: 1200
-			- *
-			- **catSpeed**: 
-				- **name**: Predatory Edge
-				- **tip**: Massive run speed increase for Crawlers.
-				- **num**: 5
-				- **cost**: 50
-				- **mana**: 100
-				- **time**: 1800
-			- *
-		- *
-		- **Units**: 
-			- **miner**: 
-				- **name**: Enslaved Miner
-				- **info**: Hard working miner.
-				- **role**: Worker
-				- **saying**: We had no choice.
+	- **Units**: 
+		- **miner**: 
+			- **name**: Enslaved Miner
+			- **info**: Hard working miner.
+			- **role**: Worker
+			- **saying**: We had no choice.
+			- **hotkey**: 81
+			- **gold**: 150
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 240
+			- **armoured**: 0
+			- **damage**: 4
+			- **toArmour**: 2
+			- **toNotArmour**: 0
+			- **health**: 65
+			- **upgradedHealth**: 90
+			- **weaponReach**: 80
+			- **mass**: 200
+			- **maxForce**: 80
+			- **dragForce**: 0.89
+			- **scale**: 0.9
+			- **maxVelocity**: 2.5
+			- **upgradedMaxVelocity**: 4
+			- **amour**: 1
+			- **bagSize**: 75
+			- **miningRate**: 37.5
+			- **manaMineRate**: 7.5
+			- **population**: 2
+			- **tower**: 
+				- **name**: Construct Tower
+				- **info**: Instructs miner to build a static tower to defend a position.
 				- **hotkey**: 81
-				- **gold**: 150
+				- **gold**: 300
 				- **mana**: 0
 				- **effect**: 0
-				- **cooldown**: 240
-				- **armoured**: 0
-				- **damage**: 4
-				- **toArmour**: 2
-				- **toNotArmour**: 0
-				- **health**: 65
-				- **upgradedHealth**: 90
-				- **weaponReach**: 80
-				- **mass**: 200
-				- **maxForce**: 80
-				- **dragForce**: 0.89
-				- **scale**: 0.9
-				- **maxVelocity**: 2.5
-				- **upgradedMaxVelocity**: 4
-				- **amour**: 1
-				- **bagSize**: 75
-				- **miningRate**: 37.5
-				- **manaMineRate**: 7.5
-				- **population**: 2
-				- **tower**: 
-					- **name**: Construct Tower
-					- **info**: Instructs miner to build a static tower to defend a position.
-					- **hotkey**: 81
-					- **gold**: 300
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 600
-					- **constructTime**: 400
-					- **constructRange**: 50
-				- *
+				- **cooldown**: 600
+				- **constructTime**: 400
+				- **constructRange**: 50
 			- *
-			- **bomber**: 
-				- **name**: Bomber
-				- **info**: Single use bomber unit. Explodes with area of effect damage. Best used against multiple oponents.
-				- **role**: AOE Assassin
-				- **saying**: Medusa wants you to have this!
-				- **hotkey**: 87
-				- **gold**: 75
+		- *
+		- **bomber**: 
+			- **name**: Bomber
+			- **info**: Single use bomber unit. Explodes with area of effect damage. Best used against multiple oponents.
+			- **role**: AOE Assassin
+			- **saying**: Medusa wants you to have this!
+			- **hotkey**: 87
+			- **gold**: 75
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 240
+			- **armoured**: 0
+			- **damage**: 0
+			- **toArmour**: 5
+			- **toNotArmour**: 0
+			- **health**: 20
+			- **weaponReach**: 40
+			- **mass**: 100
+			- **maxForce**: 80
+			- **dragForce**: 0.89
+			- **scale**: 0.7
+			- **maxVelocity**: 7.5
+			- **population**: 1
+			- **explosionRadius**: 100
+			- **explosionDamage**: 20
+			- **fireDamage**: .0625
+			- **fireFrames**: 160
+			- **detonate**: 
+				- **name**: Detonate Explosive
+				- **info**: Manual detonation of Bomber's explosives.
+				- **hotkey**: 81
+				- **gold**: 0
 				- **mana**: 0
 				- **effect**: 0
-				- **cooldown**: 240
-				- **armoured**: 0
-				- **damage**: 0
-				- **toArmour**: 5
-				- **toNotArmour**: 0
-				- **health**: 20
-				- **weaponReach**: 40
-				- **mass**: 100
-				- **maxForce**: 80
-				- **dragForce**: 0.89
-				- **scale**: 0.7
-				- **maxVelocity**: 7.5
-				- **population**: 1
-				- **explosionRadius**: 100
-				- **explosionDamage**: 20
-				- **fireDamage**: .0625
-				- **fireFrames**: 160
-				- **detonate**: 
-					- **name**: Detonate Explosive
-					- **info**: Manual detonation of Bomber's explosives.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 0
-				- *
+				- **cooldown**: 0
 			- *
-			- **cat**: 
-				- **name**: Crawler
-				- **info**: Quick unit that gains an attack advantage when fighting in a pack.
-				- **role**: Light Mele
-				- **saying**: Meeyowww!
+		- *
+		- **cat**: 
+			- **name**: Crawler
+			- **info**: Quick unit that gains an attack advantage when fighting in a pack.
+			- **role**: Light Mele
+			- **saying**: Meeyowww!
+			- **hotkey**: 87
+			- **gold**: 100
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 330
+			- **armoured**: 0
+			- **damage**: 5
+			- **toArmour**: 0
+			- **toNotArmour**: 2
+			- **health**: 55
+			- **weaponReach**: 80
+			- **mass**: 100
+			- **maxForce**: 110
+			- **dragForce**: 0.89
+			- **scale**: .8
+			- **maxVelocity**: 7.5
+			- **slowMaxVelocity**: 6
+			- **population**: 1
+			- **pack**: 
+				- **name**: Pack Mentality
+				- **info**: As more crawlers enter the battlefield each crawlers damage output is increased. Stacks up to 5 times.
 				- **hotkey**: 87
-				- **gold**: 100
+				- **gold**: 0
 				- **mana**: 0
 				- **effect**: 0
-				- **cooldown**: 330
-				- **armoured**: 0
-				- **damage**: 5
-				- **toArmour**: 0
-				- **toNotArmour**: 2
-				- **health**: 55
-				- **weaponReach**: 80
-				- **mass**: 100
-				- **maxForce**: 110
-				- **dragForce**: 0.89
-				- **scale**: .8
-				- **maxVelocity**: 7.5
-				- **slowMaxVelocity**: 6
-				- **population**: 1
-				- **pack**: 
-					- **name**: Pack Mentality
-					- **info**: As more crawlers enter the battlefield each crawlers damage output is increased. Stacks up to 5 times.
-					- **hotkey**: 87
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 0
-					- **damagePerUnit**: 1.2
-					- **stacks**: 5
-				- *
+				- **cooldown**: 0
+				- **damagePerUnit**: 1.2
+				- **stacks**: 5
 			- *
-			- **knight**: 
-				- **name**: Jugger Knight
-				- **info**: Solid melee unit that is able to initiate battle with a devastating charge.
-				- **role**: Melee
-				- **saying**: Chaaaaaarrrrrrrrgeeee!
+		- *
+		- **knight**: 
+			- **name**: Jugger Knight
+			- **info**: Solid melee unit that is able to initiate battle with a devastating charge.
+			- **role**: Melee
+			- **saying**: Chaaaaaarrrrrrrrgeeee!
+			- **hotkey**: 87
+			- **gold**: 450
+			- **mana**: 50
+			- **effect**: 0
+			- **cooldown**: 600
+			- **armoured**: 1
+			- **damage**: 15
+			- **toArmour**: 0
+			- **toNotArmour**: 5
+			- **health**: 400
+			- **weaponReach**: 80
+			- **mass**: 150
+			- **maxForce**: 100
+			- **dragForce**: 0.89
+			- **scale**: 1.00
+			- **maxVelocity**: 5.8
+			- **population**: 3
+			- **charge**: 
+				- **name**: Charge
+				- **info**: Causes the unit to charge in a straight line straight up the battlefield. Stuns the first unit that is hit by this charge.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 15
+				- **effect**: 50
+				- **cooldown**: 500
+				- **damage**: 25
+				- **stun**: 100
+				- **velocity**: 15
+				- **force**: 200
+				- **stunForce**: 10
+				- **stunArea**: 100
+			- *
+		- *
+		- **skelator**: 
+			- **name**: Marrowkai
+			- **info**: Powerful mage that is able to fear units into combat and damage units in a line.
+			- **role**: Spellcaster
+			- **saying**: I am all that is left.
+			- **hotkey**: 81
+			- **gold**: 400
+			- **mana**: 400
+			- **effect**: 30
+			- **cooldown**: 600
+			- **armoured**: 0
+			- **damage**: 20
+			- **toArmour**: 0
+			- **toNotArmour**: 0
+			- **health**: 250
+			- **weaponReach**: 80
+			- **mass**: 100
+			- **maxForce**: 60
+			- **dragForce**: 0.89
+			- **scale**: 1.2
+			- **maxVelocity**: 3
+			- **population**: 4
+			- **fist**: 
+				- **name**: Undead Fists
+				- **info**: Summons undead fists from the grave to damage units in a line.
 				- **hotkey**: 87
-				- **gold**: 450
+				- **gold**: 0
+				- **mana**: 20
+				- **effect**: 0
+				- **cooldown**: 600
+				- **range**: 500
+				- **damage**: 45
+				- **area**: 6
+			- *
+			- **reaper**: 
+				- **name**: Reaper
+				- **info**: Reaps an enemy unit into moving towards your army.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 10
+				- **effect**: 0
+				- **cooldown**: 360
+				- **range**: 700
+				- **mana**: 0
+				- **amplification**: .15
+				- **frames**: 100
+				- **damage**: 40
+			- *
+		- *
+		- **medusa**: 
+			- **name**: Medusa
+			- **info**: Master of poison
+			- **role**: Spellcaster
+			- **saying**: You fools thought Inamorta belonged to you?
+			- **hotkey**: 87
+			- **gold**: 500
+			- **mana**: 400
+			- **effect**: 0
+			- **cooldown**: 900
+			- **armoured**: 0
+			- **damage**: 14
+			- **toArmour**: 0
+			- **superDamage**: 50
+			- **toNotArmour**: 0
+			- **health**: 250
+			- **superHealth**: 2000
+			- **weaponReach**: 80
+			- **mass**: 100
+			- **maxForce**: 60
+			- **dragForce**: 0.89
+			- **scale**: 1.2
+			- **superScale**: 2
+			- **maxVelocity**: 3
+			- **population**: 5
+			- **stone**: 
+				- **name**: Stone Face
+				- **info**: Stones the opponent instantly killing any non giant unit.
+				- **hotkey**: 81
+				- **gold**: 0
 				- **mana**: 50
 				- **effect**: 0
-				- **cooldown**: 600
-				- **armoured**: 1
-				- **damage**: 15
-				- **toArmour**: 0
-				- **toNotArmour**: 5
-				- **health**: 400
-				- **weaponReach**: 80
-				- **mass**: 150
-				- **maxForce**: 100
-				- **dragForce**: 0.89
-				- **scale**: 1.00
-				- **maxVelocity**: 5.8
-				- **population**: 3
-				- **charge**: 
-					- **name**: Charge
-					- **info**: Causes the unit to charge in a straight line straight up the battlefield. Stuns the first unit that is hit by this charge.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 15
-					- **effect**: 50
-					- **cooldown**: 500
-					- **damage**: 25
-					- **stun**: 100
-					- **velocity**: 15
-					- **force**: 200
-					- **stunForce**: 10
-					- **stunArea**: 100
-				- *
+				- **cooldown**: 800
+				- **superCooldown**: 300
+				- **range**: 600
+				- **damageToArmour**: 300
+				- **damageToNotArmour**: 400
 			- *
-			- **skelator**: 
-				- **name**: Marrowkai
-				- **info**: Powerful mage that is able to fear units into combat and damage units in a line.
-				- **role**: Spellcaster
-				- **saying**: I am all that is left.
-				- **hotkey**: 81
-				- **gold**: 400
-				- **mana**: 400
-				- **effect**: 30
-				- **cooldown**: 600
-				- **armoured**: 0
-				- **damage**: 20
-				- **toArmour**: 0
-				- **toNotArmour**: 0
-				- **health**: 250
-				- **weaponReach**: 80
-				- **mass**: 100
-				- **maxForce**: 60
-				- **dragForce**: 0.89
-				- **scale**: 1.2
-				- **maxVelocity**: 3
-				- **population**: 4
-				- **fist**: 
-					- **name**: Undead Fists
-					- **info**: Summons undead fists from the grave to damage units in a line.
-					- **hotkey**: 87
-					- **gold**: 0
-					- **mana**: 20
-					- **effect**: 0
-					- **cooldown**: 600
-					- **range**: 500
-					- **damage**: 45
-					- **area**: 6
-				- *
-				- **reaper**: 
-					- **name**: Reaper
-					- **info**: Reaps an enemy unit into moving towards your army.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 10
-					- **effect**: 0
-					- **cooldown**: 360
-					- **range**: 700
-					- **mana**: 0
-					- **amplification**: .15
-					- **frames**: 100
-					- **damage**: 40
-				- *
-			- *
-			- **medusa**: 
-				- **name**: Medusa
-				- **info**: Master of poison
-				- **role**: Spellcaster
-				- **saying**: You fools thought Inamorta belonged to you?
+			- **poison**: 
+				- **name**: Poison Spray
+				- **info**: Sprays a poison over the ground.
 				- **hotkey**: 87
-				- **gold**: 500
-				- **mana**: 400
+				- **gold**: 0
+				- **mana**: 30
 				- **effect**: 0
-				- **cooldown**: 900
-				- **armoured**: 0
-				- **damage**: 14
-				- **toArmour**: 0
-				- **superDamage**: 50
-				- **toNotArmour**: 0
-				- **health**: 250
-				- **superHealth**: 2000
-				- **weaponReach**: 80
-				- **mass**: 100
-				- **maxForce**: 60
-				- **dragForce**: 0.89
-				- **scale**: 1.2
-				- **superScale**: 2
-				- **maxVelocity**: 3
-				- **population**: 5
-				- **stone**: 
-					- **name**: Stone Face
-					- **info**: Stones the opponent instantly killing any non giant unit.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 50
-					- **effect**: 0
-					- **cooldown**: 800
-					- **superCooldown**: 300
-					- **range**: 600
-					- **damageToArmour**: 300
-					- **damageToNotArmour**: 400
-				- *
-				- **poison**: 
-					- **name**: Poison Spray
-					- **info**: Sprays a poison over the ground.
-					- **hotkey**: 87
-					- **gold**: 0
-					- **mana**: 30
-					- **effect**: 0
-					- **cooldown**: 500
-					- **poison**: 9
-					- **range**: 160
-					- **area**: 200
-					- **time**: 900
-				- *
+				- **cooldown**: 500
+				- **poison**: 9
+				- **range**: 160
+				- **area**: 200
+				- **time**: 900
 			- *
-			- **giant**: 
-				- **name**: Giant
-				- **info**: Clobbers the opponent causing area of effect damage.
-				- **role**: Heavy Mele
-				- **saying**: Stop moving puny things.
-				- **hotkey**: 87
-				- **gold**: 1500
-				- **mana**: 0
-				- **effect**: 0
-				- **cooldown**: 1200
-				- **armoured**: 1
-				- **damage**: 35
-				- **toArmour**: 25
-				- **toNotArmour**: 0
-				- **health**: 1000
-				- **weaponReach**: 150
-				- **mass**: 1500
-				- **maxForce**: 2000
-				- **dragForce**: 0.89
-				- **scale**: 2.2
-				- **maxVelocity**: 3
-				- **population**: 7
-				- **healthI**: 1350
-				- **healthII**: 1800
-				- **growthIScale**: 2.5
-				- **growthIIScale**: 3
-				- **maxTargetsToHit**: 3
-				- **stunTime**: 45
-			- *
-			- **wingidon**: 
-				- **name**: Eclipsor
-				- **info**: A flying winged archer.
-				- **role**: Air Ranged
-				- **saying**: Shadows can hurt.
+		- *
+		- **giant**: 
+			- **name**: Giant
+			- **info**: Clobbers the opponent causing area of effect damage.
+			- **role**: Heavy Mele
+			- **saying**: Stop moving puny things.
+			- **hotkey**: 87
+			- **gold**: 1500
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 1200
+			- **armoured**: 1
+			- **damage**: 35
+			- **toArmour**: 25
+			- **toNotArmour**: 0
+			- **health**: 1000
+			- **weaponReach**: 150
+			- **mass**: 1500
+			- **maxForce**: 2000
+			- **dragForce**: 0.89
+			- **scale**: 2.2
+			- **maxVelocity**: 3
+			- **population**: 7
+			- **healthI**: 1350
+			- **healthII**: 1800
+			- **growthIScale**: 2.5
+			- **growthIIScale**: 3
+			- **maxTargetsToHit**: 3
+			- **stunTime**: 45
+		- *
+		- **wingidon**: 
+			- **name**: Eclipsor
+			- **info**: A flying winged archer.
+			- **role**: Air Ranged
+			- **saying**: Shadows can hurt.
+			- **hotkey**: 81
+			- **gold**: 400
+			- **mana**: 150
+			- **effect**: 0
+			- **cooldown**: 600
+			- **damage**: 13
+			- **toArmour**: 0
+			- **toNotArmour**: 5
+			- **armoured**: 0
+			- **health**: 90
+			- **mass**: 75
+			- **maxForce**: 70
+			- **dragForce**: 0.89
+			- **scale**: 1.2
+			- **maxVelocity**: 5
+			- **arrowVelocity**: 25
+			- **legRotateAngleWhenFlying**: 30
+			- **maximumRange**: 625
+			- **population**: 3
+			- **wind**: 
+				- **name**: Wind
+				- **info**: Repels enemy ranged attacks
 				- **hotkey**: 81
-				- **gold**: 400
-				- **mana**: 150
-				- **effect**: 0
-				- **cooldown**: 600
-				- **damage**: 13
-				- **toArmour**: 0
-				- **toNotArmour**: 5
-				- **armoured**: 0
-				- **health**: 90
-				- **mass**: 75
-				- **maxForce**: 70
-				- **dragForce**: 0.89
-				- **scale**: 1.2
-				- **maxVelocity**: 5
-				- **arrowVelocity**: 25
-				- **legRotateAngleWhenFlying**: 30
-				- **maximumRange**: 625
-				- **population**: 3
-				- **wind**: 
-					- **name**: Wind
-					- **info**: Repels enemy ranged attacks
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 100
-					- **effect**: 100
-					- **cooldown**: 900
-					- **strength**: 3
-				- *
-			- *
-			- **dead**: 
-				- **name**: Dead
-				- **info**: A zombie that uses pieces of its own body as projectiles.
-				- **role**: Rang
-				- **saying**: Ugrrhgh braaaaiins!
-				- **hotkey**: 81
-				- **gold**: 300
+				- **gold**: 0
 				- **mana**: 100
 				- **effect**: 100
-				- **cooldown**: 450
-				- **damage**: 8
-				- **toArmour**: 5
-				- **toNotArmour**: 0
-				- **castleDamage**: 10
-				- **castleToArmour**: 15
-				- **castleToNotArmour**: 0
-				- **castleRange**: 1350
-				- **castlePoison**: 6
-				- **armoured**: 1
-				- **health**: 175
-				- **mass**: 75
-				- **maxForce**: 40
-				- **dragForce**: 0.89
-				- **scale**: 1
-				- **maxVelocity**: 3
-				- **arrowVelocity**: 20
-				- **amour**: 0
-				- **maximumRange**: 700
-				- **population**: 3
-				- **poison**: 
-					- **name**: Poisoned Guts
-					- **info**: A toggle that activates poison mode.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 10
-					- **effect**: 0
-					- **cooldown**: 0
-					- **damage**: 6
-				- *
+				- **cooldown**: 900
+				- **strength**: 3
 			- *
-			- **tower**: 
-				- **name**: Tower
-				- **info**: A tower that fires missiles at the enemy
+		- *
+		- **dead**: 
+			- **name**: Dead
+			- **info**: A zombie that uses pieces of its own body as projectiles.
+			- **role**: Rang
+			- **saying**: Ugrrhgh braaaaiins!
+			- **hotkey**: 81
+			- **gold**: 300
+			- **mana**: 100
+			- **effect**: 100
+			- **cooldown**: 450
+			- **damage**: 8
+			- **toArmour**: 5
+			- **toNotArmour**: 0
+			- **castleDamage**: 10
+			- **castleToArmour**: 15
+			- **castleToNotArmour**: 0
+			- **castleRange**: 1350
+			- **castlePoison**: 6
+			- **armoured**: 1
+			- **health**: 175
+			- **mass**: 75
+			- **maxForce**: 40
+			- **dragForce**: 0.89
+			- **scale**: 1
+			- **maxVelocity**: 3
+			- **arrowVelocity**: 20
+			- **amour**: 0
+			- **maximumRange**: 700
+			- **population**: 3
+			- **poison**: 
+				- **name**: Poisoned Guts
+				- **info**: A toggle that activates poison mode.
 				- **hotkey**: 81
-				- **gold**: 300
+				- **gold**: 0
+				- **mana**: 10
+				- **effect**: 0
+				- **cooldown**: 0
+				- **damage**: 6
+			- *
+		- *
+		- **tower**: 
+			- **name**: Tower
+			- **info**: A tower that fires missiles at the enemy
+			- **hotkey**: 81
+			- **gold**: 300
+			- **mana**: 0
+			- **effect**: 100
+			- **cooldown**: 450
+			- **damage**: 20
+			- **toArmour**: 4
+			- **toNotArmour**: 0
+			- **armoured**: 1
+			- **health**: 250
+			- **mass**: 75
+			- **maxForce**: 40
+			- **dragForce**: 0.89
+			- **scale**: 1
+			- **maxVelocity**: 3
+			- **arrowVelocity**: 40
+			- **maximumRange**: 400
+			- **population**: 0
+			- **shotRate**: 35
+			- **remove**: 
+				- **name**: Destroy Tower
+				- **info**: Destroys the selected tower.
+				- **hotkey**: 81
+				- **gold**: 0
 				- **mana**: 0
-				- **effect**: 100
-				- **cooldown**: 450
-				- **damage**: 20
-				- **toArmour**: 4
-				- **toNotArmour**: 0
-				- **armoured**: 1
-				- **health**: 250
-				- **mass**: 75
-				- **maxForce**: 40
-				- **dragForce**: 0.89
-				- **scale**: 1
-				- **maxVelocity**: 3
-				- **arrowVelocity**: 40
-				- **maximumRange**: 400
-				- **population**: 0
-				- **shotRate**: 35
-				- **remove**: 
-					- **name**: Destroy Tower
-					- **info**: Destroys the selected tower.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 0
-				- *
+				- **effect**: 0
+				- **cooldown**: 0
 			- *
 		- *
 	- *
-	- **Order**: 
-		- **maxWalls**: 2
-		- **Tech**: 
-			- **castleArchers**: 
-				- **num**: 4
-			- *
-			- **passiveIncomeGold1**: 
-				- **name**: Passive Income Gold 1
-				- **cost**: 150
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Passively gain a small amount of gold and mana every few seconds. 
-			- *
-			- **passiveIncomeGold2**: 
-				- **name**: Passive Income Gold 2
-				- **cost**: 150
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Passively gain a small amount of gold and mana every few seconds.  
-			- *
-			- **passiveIncomeGold3**: 
-				- **name**: Passive Income Gold 3
-				- **cost**: 150
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Passively gain a small amount of gold and mana every few seconds.  Increasing the amount gained with each level up to a maximum of 3 levels
-			- *
-			- **passiveIncomeMana**: 
-				- **name**: Passive Income Mana
-				- **cost**: 50
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: default tip
-			- *
-			- **castleArchers1**: 
-				- **name**: Castle Archer
-				- **tip**: An untargetable powerful Archidon will appear high on your castle walls out of reach from the enemy.
-				- **num**: 5
-				- **cost**: 300
-				- **mana**: 0
-				- **time**: 300
-			- *
-			- **castleArchers2**: 
-				- **name**: Castle Archer
-				- **tip**: A second untargetable powerful Archidon will appear high on your castle walls out of reach from the enemy.
-				- **num**: 5
-				- **cost**: 600
-				- **mana**: 0
-				- **time**: 500
-			- *
-			- **castleArchers3**: 
-				- **name**: Castle Archer
-				- **tip**: A third untargetable powerful Archidon will appear high on your castle walls out of reach from the enemy.
-				- **num**: 5
-				- **cost**: 1000
-				- **mana**: 0
-				- **time**: 700
-			- *
-			- **castleArchers4**: 
-				- **name**: Castle Archer
-				- **tip**: A 4th untargetable powerful Archidon will appear high on your castle walls out of reach from the enemy.
-				- **num**: 5
-				- **cost**: 600
-				- **mana**: 0
-				- **time**: 800
-			- *
-			- **castleArchers5**: 
-				- **name**: Castle Archer
-				- **tip**: Defensive castle archer that outranges all units
-				- **num**: 5
-				- **cost**: 700
-				- **mana**: 0
-				- **time**: 900
-			- *
-			- **flyingCrossbowmanStun**: 
-				- **name**: Stun
-				- **tip**: Defensive castle archer that outranges all units
-				- **cost**: 100
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 300
-			- *
+- *
+- **Order**: 
+	- **maxWalls**: 2
+	- **Tech**: 
+		- **castleArchers**: 
+			- **num**: 4
+		- *
+		- **passiveIncomeGold1**: 
+			- **name**: Passive Income Gold 1
+			- **cost**: 150
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Passively gain a small amount of gold and mana every few seconds. 
+		- *
+		- **passiveIncomeGold2**: 
+			- **name**: Passive Income Gold 2
+			- **cost**: 150
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Passively gain a small amount of gold and mana every few seconds.  
+		- *
+		- **passiveIncomeGold3**: 
+			- **name**: Passive Income Gold 3
+			- **cost**: 150
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Passively gain a small amount of gold and mana every few seconds.  Increasing the amount gained with each level up to a maximum of 3 levels
+		- *
+		- **passiveIncomeMana**: 
+			- **name**: Passive Income Mana
+			- **cost**: 50
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: default tip
+		- *
+		- **castleArchers1**: 
+			- **name**: Castle Archer
+			- **tip**: An untargetable powerful Archidon will appear high on your castle walls out of reach from the enemy.
+			- **num**: 5
+			- **cost**: 300
+			- **mana**: 0
+			- **time**: 300
+		- *
+		- **castleArchers2**: 
+			- **name**: Castle Archer
+			- **tip**: A second untargetable powerful Archidon will appear high on your castle walls out of reach from the enemy.
+			- **num**: 5
+			- **cost**: 600
+			- **mana**: 0
+			- **time**: 500
+		- *
+		- **castleArchers3**: 
+			- **name**: Castle Archer
+			- **tip**: A third untargetable powerful Archidon will appear high on your castle walls out of reach from the enemy.
+			- **num**: 5
+			- **cost**: 1000
+			- **mana**: 0
+			- **time**: 700
+		- *
+		- **castleArchers4**: 
+			- **name**: Castle Archer
+			- **tip**: A 4th untargetable powerful Archidon will appear high on your castle walls out of reach from the enemy.
+			- **num**: 5
+			- **cost**: 600
+			- **mana**: 0
+			- **time**: 800
+		- *
+		- **castleArchers5**: 
+			- **name**: Castle Archer
+			- **tip**: Defensive castle archer that outranges all units
+			- **num**: 5
+			- **cost**: 700
+			- **mana**: 0
+			- **time**: 900
+		- *
+		- **flyingCrossbowmanStun**: 
+			- **name**: Stun
+			- **tip**: Defensive castle archer that outranges all units
+			- **cost**: 100
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 300
+		- *
+		- **rage**: 
+			- **name**: Rage
+			- **cost**: 50
+			- **mana**: 50
+			- **effect**: 1
+			- **time**: 1800
+			- **tip**: Increased attack and movement speed for a short period of time. Upon activation the Swordwrath will lose a small portion of health.
+		- *
+		- **block**: 
+			- **name**: Shield Wall
+			- **cost**: 50
+			- **mana**: 50
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Speartons will move into a defensive stance reducing incoming damage by 40%.
+		- *
+		- **spearThrow**: 
+			- **name**: Spear Throw
+			- **cost**: 100
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 300
+			- **tip**: default tip
+		- *
+		- **cloak**: 
+			- **name**: Shinobi Level I
+			- **cost**: 100
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 900
+			- **tip**: Cloak and the next attack out of Shinobi will do increased damage and inflict poison on the enemy.
+		- *
+		- **cloak2**: 
+			- **name**: Cloak Level 2
+			- **cost**: 150
+			- **mana**: 150
+			- **effect**: 1
+			- **time**: 900
+			- **tip**: Cloak and the next attack out of Shinobi will do massive increased damage and inflict poison on the enemy.
+		- *
+		- **ninjaCriticalStrike**: 
+			- **name**: Critical Strike
+			- **cost**: 100
+			- **mana**: 200
+			- **effect**: 1
+			- **time**: 1200
+			- **tip**: default tip
+		- *
+		- **hardShot**: 
+			- **name**: Hard Shot
+			- **cost**: 100
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 300
+			- **tip**: default tip
+		- *
+		- **archidonQuickFire**: 
+			- **name**: Quick Fire
+			- **cost**: 100
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 300
+			- **tip**: default tip
+		- *
+		- **archidonFire**: 
+			- **name**: Fire Arrows
+			- **cost**: 50
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 1200
+			- **tip**: Fire a single flaming arrow with extra range and damage.
+		- *
+		- **archidonPoison**: 
+			- **name**: Poison
+			- **cost**: 100
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 300
+			- **tip**: default tip
+		- *
+		- **cure**: 
+			- **name**: Cure
+			- **cost**: 100
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 300
+			- **tip**: A spell to cure a single poisoned unit.
+		- *
+		- **reveal**: 
+			- **name**: Reveal
+			- **cost**: 100
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 300
+			- **tip**: default tip
+		- *
+		- **magikillWall**: 
+			- **name**: Magikill Wall
+			- **cost**: 100
+			- **mana**: 150
+			- **effect**: 1
+			- **time**: 1200
+			- **tip**: Allows Magikill to cast a wall of electricty that damages all units that stand within it.
+		- *
+		- **magikillNuke**: 
+			- **name**: Nuke
+			- **cost**: 100
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 300
+			- **tip**: default tip
+		- *
+		- **magikillPoison**: 
+			- **name**: Poison Spray
+			- **cost**: 50
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: A directional spell that sprays multiple units infecting them with poison.
+		- *
+		- **speartonShieldBash**: 
+			- **name**: Shield Bash
+			- **cost**: 50
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Speartons will smash back the enemy with their shields.
+		- *
+		- **statueHealth**: 
+			- **name**: Resilience
+			- **cost**: 50
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Increased statue health.
+		- *
+		- **giantSize1**: 
+			- **name**: Giant Growth I
+			- **cost**: 200
+			- **mana**: 200
+			- **effect**: 1
+			- **time**: 1200
+			- **tip**: Your Giants will increase in size and health.
+		- *
+		- **giantSize2**: 
+			- **name**: Giant Growth II
+			- **cost**: 400
+			- **mana**: 400
+			- **effect**: 1
+			- **time**: 1800
+			- **tip**: Your Giants will increase in size and health dramatically.
+		- *
+		- **minerSpeed**: 
+			- **name**: Miner Hustle
+			- **cost**: 300
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 600
+			- **tip**: Increases miner speed and health.
+		- *
+		- **goldPassive1**: 
+			- **name**: Passive Income
+			- **cost**: 500
+			- **mana**: 100
+			- **effect**: 1
+			- **time**: 400
+			- **tip**: Increases the amount of passive income.
+		- *
+		- **minerWall**: 
+			- **name**: Miner Wall
+			- **cost**: 100
+			- **mana**: 0
+			- **effect**: 1
+			- **time**: 330
+			- **tip**: Constructs a wall that blocks the enemy.
+		- *
+		- **crossbowFire**: 
+			- **name**: Blazing Bolts
+			- **cost**: 400
+			- **mana**: 0
+			- **effect**: 1
+			- **time**: 1200
+			- **tip**: Allbowtross fire flaming bolts with increased damage.
+		- *
+	- *
+	- **Units**: 
+		- **statue**: 
+			- **health**: 1600
+			- **amour**: 1
+			- **upgradedHealth**: 3000
+		- *
+		- **swordwrath**: 
+			- **name**: Swordwrath
+			- **info**: High damaging unit with low survivability
+			- **role**: Melee
+			- **saying**: Limbs will sever at mere sight!
+			- **hotkey**: 50
+			- **gold**: 125
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 360
+			- **armoured**: 0
+			- **health**: 85
+			- **weaponReach**: 90
+			- **damage**: 9
+			- **rageDamage**: 0
+			- **toArmour**: 6
+			- **toNotArmour**: 0
+			- **dragForce**: 0.89
+			- **maxForce**: 100
+			- **mass**: 100
+			- **scale**: 1.0
+			- **maxVelocity**: 5.0
 			- **rage**: 
 				- **name**: Rage
-				- **cost**: 50
-				- **mana**: 50
-				- **effect**: 1
-				- **time**: 1800
-				- **tip**: Increased attack and movement speed for a short period of time. Upon activation the Swordwrath will lose a small portion of health.
+				- **info**: Increase in attack speed and movement speed at the cost of a small portion of health.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 0
+				- **effect**: 170
+				- **cooldown**: 60
+				- **healthLoss**: 15
+				- **damageIncrease**: 0
+				- **rageMaxVelocity**: 7
 			- *
-			- **block**: 
+			- **amour**: 0
+			- **population**: 1
+		- *
+		- **spearton**: 
+			- **name**: Spearton
+			- **info**: Defensive unit used to tank damage
+			- **role**: Mele
+			- **saying**: Born to die, But not before them!
+			- **hotkey**: 52
+			- **gold**: 450
+			- **mana**: 50
+			- **effect**: 0
+			- **cooldown**: 600
+			- **armoured**: 1
+			- **damage**: 12
+			- **toArmour**: 0
+			- **toNotArmour**: 5
+			- **createTime**: 600
+			- **health**: 400
+			- **weaponReach**: 90
+			- **mass**: 150
+			- **maxForce**: 100
+			- **dragForce**: 0.89
+			- **scale**: 0.9
+			- **maxVelocity**: 5.8
+			- **population**: 3
+			- **shieldWall**: 
 				- **name**: Shield Wall
-				- **cost**: 50
+				- **info**: Toggles shield wall that reduces damage taken by 40% but removes ability to move.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 0
+				- **effect**: 0
+				- **cooldown**: 0
+				- **damageReduction**: 0.375
+			- *
+			- **shieldBash**: 
+				- **name**: Shield Bash
+				- **info**: While in the shield wall state, spearton uses shield to push back opponents.
+				- **hotkey**: 87
+				- **gold**: 0
+				- **mana**: 10
+				- **effect**: 0
+				- **cooldown**: 180
+				- **damage**: 25
+				- **stunTime**: 100
+				- **stunForce**: 9
+				- **range**: 100
+			- *
+		- *
+		- **ninja**: 
+			- **name**: Shadowrath
+			- **info**: Cloak and the next attack out of Shinobi will do increased damage and inflict poison on the enemy.
+			- **role**: Scou
+			- **saying**: The last thing you never see.
+			- **hotkey**: 54
+			- **gold**: 450
+			- **mana**: 150
+			- **effect**: 0
+			- **cooldown**: 750
+			- **armoured**: 0
+			- **damage**: 14
+			- **toArmour**: 0
+			- **toNotArmour**: 5
+			- **health**: 250
+			- **weaponReach**: 120
+			- **mass**: 50
+			- **maxForce**: 60
+			- **dragForce**: 0.89
+			- **scale**: 0.9
+			- **ninjaCopyDistance**: .5
+			- **maxVelocity**: 7.5
+			- **population**: 4
+			- **fury**: 
+				- **name**: Fury
+				- **info**: Damage increases with successive hits on a single target. Stacks up to 5 times.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 0
+				- **effect**: 0
+				- **cooldown**: 0
+				- **stacks**: 5
+				- **bonus**: 5
+				- **furyEffect**: 120
+			- *
+			- **stealth**: 
+				- **name**: Stealth
+				- **info**: Allows the ninja to cloak for a period of time. Will not take damage and is not targatable by enemies during this state.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 30
+				- **effect**: 200
+				- **cooldown**: 900
+				- **maxVelocity**: 4.5
+				- **damageToArmour**: 25
+				- **damageToNotArmour**: 50
+				- **poison**: 4
+				- **damageToArmour2**: 100
+				- **damageToNotArmour2**: 200
+				- **poison2**: 8
+			- *
+		- *
+		- **magikill**: 
+			- **name**: Magikill
+			- **info**: A damage dealing spell caster unit.
+			- **role**: Spellcaster
+			- **saying**: Today we summon unity!
+			- **hotkey**: 56
+			- **gold**: 500
+			- **mana**: 400
+			- **effect**: 0
+			- **cooldown**: 900
+			- **armoured**: 0
+			- **damage**: 5
+			- **toArmour**: 0
+			- **toNotArmour**: 0
+			- **health**: 200
+			- **weaponReach**: 90
+			- **mass**: 80
+			- **maxForce**: 60
+			- **dragForce**: 0.89
+			- **scale**: 1
+			- **maxVelocity**: 3
+			- **nuke**: 
+				- **name**: Explosion
+				- **info**: Casts a small area of effect explosion .
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 0
+				- **effect**: 0
+				- **cooldown**: 400
+				- **damage**: 20
+				- **area**: 130
+				- **range**: 420
+				- **fireDamage**: .25
+				- **fireFrames**: 270
+			- *
+			- **electricWall**: 
+				- **name**: Electric Wall
+				- **info**: A line of electricty that damages all units across the field.
+				- **hotkey**: 69
+				- **gold**: 0
+				- **mana**: 35
+				- **effect**: 0
+				- **cooldown**: 360
+				- **time**: 180
+				- **area**: 75
+				- **range**: 400
+				- **damage**: 16
+				- **frequency**: 15
+			- *
+			- **poisonSpray**: 
+				- **name**: Poison Spray
+				- **info**: A spray of poison damages all units in a line.
+				- **hotkey**: 87
+				- **gold**: 0
 				- **mana**: 50
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Speartons will move into a defensive stance reducing incoming damage by 40%.
+				- **effect**: 0
+				- **cooldown**: 300
+				- **time**: 60
+				- **range**: 700
+				- **area**: 80
+				- **damage**: 10
 			- *
-			- **spearThrow**: 
-				- **name**: Spear Throw
-				- **cost**: 100
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 300
-				- **tip**: default tip
-			- *
-			- **cloak**: 
-				- **name**: Shinobi Level I
-				- **cost**: 100
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 900
-				- **tip**: Cloak and the next attack out of Shinobi will do increased damage and inflict poison on the enemy.
-			- *
-			- **cloak2**: 
-				- **name**: Cloak Level 2
-				- **cost**: 150
-				- **mana**: 150
-				- **effect**: 1
-				- **time**: 900
-				- **tip**: Cloak and the next attack out of Shinobi will do massive increased damage and inflict poison on the enemy.
-			- *
-			- **ninjaCriticalStrike**: 
-				- **name**: Critical Strike
-				- **cost**: 100
-				- **mana**: 200
-				- **effect**: 1
-				- **time**: 1200
-				- **tip**: default tip
-			- *
-			- **hardShot**: 
-				- **name**: Hard Shot
-				- **cost**: 100
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 300
-				- **tip**: default tip
-			- *
-			- **archidonQuickFire**: 
-				- **name**: Quick Fire
-				- **cost**: 100
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 300
-				- **tip**: default tip
-			- *
-			- **archidonFire**: 
-				- **name**: Fire Arrows
-				- **cost**: 50
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 1200
-				- **tip**: Fire a single flaming arrow with extra range and damage.
-			- *
-			- **archidonPoison**: 
-				- **name**: Poison
-				- **cost**: 100
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 300
-				- **tip**: default tip
+			- **population**: 5
+		- *
+		- **monk**: 
+			- **name**: Meric
+			- **info**: A support unit that is able to heal and cure your front line troops.
+			- **role**: Support
+			- **saying**: All is well, I cast a spell!
+			- **hotkey**: 55
+			- **gold**: 300
+			- **mana**: 200
+			- **effect**: 0
+			- **cooldown**: 450
+			- **armoured**: 0
+			- **damage**: 8
+			- **toArmour**: 0
+			- **toNotArmour**: 0
+			- **health**: 180
+			- **weaponReach**: 90
+			- **mass**: 50
+			- **maxForce**: 60
+			- **dragForce**: 0.89
+			- **scale**: 0.9
+			- **maxVelocity**: 3
+			- **amour**: 0
+			- **heal**: 
+				- **name**: Heal
+				- **info**: Heals a single unit.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 0
+				- **effect**: 0
+				- **cooldown**: 75
+				- **amount**: 20
+				- **duration**: 1
+				- **range**: 450
 			- *
 			- **cure**: 
 				- **name**: Cure
-				- **cost**: 100
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 300
-				- **tip**: A spell to cure a single poisoned unit.
+				- **info**: Cures a single unit.
+				- **hotkey**: 87
+				- **gold**: 0
+				- **mana**: 5
+				- **effect**: 0
+				- **cooldown**: 90
+				- **range**: 450
 			- *
-			- **reveal**: 
-				- **name**: Reveal
-				- **cost**: 100
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 300
-				- **tip**: default tip
-			- *
-			- **magikillWall**: 
-				- **name**: Magikill Wall
-				- **cost**: 100
-				- **mana**: 150
-				- **effect**: 1
-				- **time**: 1200
-				- **tip**: Allows Magikill to cast a wall of electricty that damages all units that stand within it.
-			- *
-			- **magikillNuke**: 
-				- **name**: Nuke
-				- **cost**: 100
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 300
-				- **tip**: default tip
-			- *
-			- **magikillPoison**: 
-				- **name**: Poison Spray
-				- **cost**: 50
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: A directional spell that sprays multiple units infecting them with poison.
-			- *
-			- **speartonShieldBash**: 
-				- **name**: Shield Bash
-				- **cost**: 50
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Speartons will smash back the enemy with their shields.
-			- *
-			- **statueHealth**: 
-				- **name**: Resilience
-				- **cost**: 50
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Increased statue health.
-			- *
-			- **giantSize1**: 
-				- **name**: Giant Growth I
-				- **cost**: 200
-				- **mana**: 200
-				- **effect**: 1
-				- **time**: 1200
-				- **tip**: Your Giants will increase in size and health.
-			- *
-			- **giantSize2**: 
-				- **name**: Giant Growth II
-				- **cost**: 400
-				- **mana**: 400
-				- **effect**: 1
-				- **time**: 1800
-				- **tip**: Your Giants will increase in size and health dramatically.
-			- *
-			- **minerSpeed**: 
-				- **name**: Miner Hustle
-				- **cost**: 300
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 600
-				- **tip**: Increases miner speed and health.
-			- *
-			- **goldPassive1**: 
-				- **name**: Passive Income
-				- **cost**: 500
-				- **mana**: 100
-				- **effect**: 1
-				- **time**: 400
-				- **tip**: Increases the amount of passive income.
-			- *
-			- **minerWall**: 
-				- **name**: Miner Wall
-				- **cost**: 100
-				- **mana**: 0
-				- **effect**: 1
-				- **time**: 330
-				- **tip**: Constructs a wall that blocks the enemy.
-			- *
-			- **crossbowFire**: 
-				- **name**: Blazing Bolts
-				- **cost**: 400
-				- **mana**: 0
-				- **effect**: 1
-				- **time**: 1200
-				- **tip**: Allbowtross fire flaming bolts with increased damage.
-			- *
+			- **population**: 3
 		- *
-		- **Units**: 
-			- **statue**: 
-				- **health**: 1600
-				- **amour**: 1
-				- **upgradedHealth**: 3000
-			- *
-			- **swordwrath**: 
-				- **name**: Swordwrath
-				- **info**: High damaging unit with low survivability
-				- **role**: Melee
-				- **saying**: Limbs will sever at mere sight!
-				- **hotkey**: 50
-				- **gold**: 125
-				- **mana**: 0
+		- **archer**: 
+			- **name**: Archidon
+			- **info**: Basic ranged infantry. Strong in large numbers.
+			- **role**: Light Ranged
+			- **saying**: They will fall before they get a chance to stand.
+			- **hotkey**: 51
+			- **gold**: 300
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 450
+			- **damage**: 9
+			- **toArmour**: 0
+			- **toNotArmour**: 4
+			- **castleDamage**: 14
+			- **castleToArmour**: 0
+			- **castleToNotArmour**: 0
+			- **castleRange**: 1350
+			- **castleArea**: 100
+			- **castleAreaDamage**: 8
+			- **armoured**: 0
+			- **health**: 55
+			- **mass**: 75
+			- **maxForce**: 55
+			- **dragForce**: 0.89
+			- **scale**: 0.9
+			- **maxVelocity**: 4.8
+			- **arrowVelocity**: 30
+			- **amour**: 0
+			- **maximumRange**: 700
+			- **fire**: 
+				- **name**: Fire Arrow
+				- **info**: Shoots a single fire arrow into the air with increased range and damage.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 5
 				- **effect**: 0
-				- **cooldown**: 360
-				- **armoured**: 0
-				- **health**: 85
-				- **weaponReach**: 90
-				- **damage**: 9
-				- **rageDamage**: 0
-				- **toArmour**: 6
-				- **toNotArmour**: 0
-				- **dragForce**: 0.89
-				- **maxForce**: 100
-				- **mass**: 100
-				- **scale**: 1.0
-				- **maxVelocity**: 5.0
-				- **rage**: 
-					- **name**: Rage
-					- **info**: Increase in attack speed and movement speed at the cost of a small portion of health.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 170
-					- **cooldown**: 60
-					- **healthLoss**: 15
-					- **damageIncrease**: 0
-					- **rageMaxVelocity**: 7
-				- *
-				- **amour**: 0
-				- **population**: 1
+				- **cooldown**: 500
+				- **range**: 1100
+				- **velocity**: 27
+				- **fireDamage**: .0886
+				- **fireFrames**: 300
 			- *
-			- **spearton**: 
-				- **name**: Spearton
-				- **info**: Defensive unit used to tank damage
-				- **role**: Mele
-				- **saying**: Born to die, But not before them!
-				- **hotkey**: 52
-				- **gold**: 450
-				- **mana**: 50
-				- **effect**: 0
-				- **cooldown**: 600
-				- **armoured**: 1
-				- **damage**: 12
-				- **toArmour**: 0
-				- **toNotArmour**: 5
-				- **createTime**: 600
-				- **health**: 400
-				- **weaponReach**: 90
-				- **mass**: 150
-				- **maxForce**: 100
-				- **dragForce**: 0.89
-				- **scale**: 0.9
-				- **maxVelocity**: 5.8
-				- **population**: 3
-				- **shieldWall**: 
-					- **name**: Shield Wall
-					- **info**: Toggles shield wall that reduces damage taken by 40% but removes ability to move.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 0
-					- **damageReduction**: 0.375
-				- *
-				- **shieldBash**: 
-					- **name**: Shield Bash
-					- **info**: While in the shield wall state, spearton uses shield to push back opponents.
-					- **hotkey**: 87
-					- **gold**: 0
-					- **mana**: 10
-					- **effect**: 0
-					- **cooldown**: 180
-					- **damage**: 25
-					- **stunTime**: 100
-					- **stunForce**: 9
-					- **range**: 100
-				- *
-			- *
-			- **ninja**: 
-				- **name**: Shadowrath
-				- **info**: Cloak and the next attack out of Shinobi will do increased damage and inflict poison on the enemy.
-				- **role**: Scou
-				- **saying**: The last thing you never see.
-				- **hotkey**: 54
-				- **gold**: 450
-				- **mana**: 150
-				- **effect**: 0
-				- **cooldown**: 750
-				- **armoured**: 0
-				- **damage**: 14
-				- **toArmour**: 0
-				- **toNotArmour**: 5
-				- **health**: 250
-				- **weaponReach**: 120
-				- **mass**: 50
-				- **maxForce**: 60
-				- **dragForce**: 0.89
-				- **scale**: 0.9
-				- **ninjaCopyDistance**: .5
-				- **maxVelocity**: 7.5
-				- **population**: 4
-				- **fury**: 
-					- **name**: Fury
-					- **info**: Damage increases with successive hits on a single target. Stacks up to 5 times.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 0
-					- **stacks**: 5
-					- **bonus**: 5
-					- **furyEffect**: 120
-				- *
-				- **stealth**: 
-					- **name**: Stealth
-					- **info**: Allows the ninja to cloak for a period of time. Will not take damage and is not targatable by enemies during this state.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 30
-					- **effect**: 200
-					- **cooldown**: 900
-					- **maxVelocity**: 4.5
-					- **damageToArmour**: 25
-					- **damageToNotArmour**: 50
-					- **poison**: 4
-					- **damageToArmour2**: 100
-					- **damageToNotArmour2**: 200
-					- **poison2**: 8
-				- *
-			- *
-			- **magikill**: 
-				- **name**: Magikill
-				- **info**: A damage dealing spell caster unit.
-				- **role**: Spellcaster
-				- **saying**: Today we summon unity!
-				- **hotkey**: 56
-				- **gold**: 500
-				- **mana**: 400
-				- **effect**: 0
-				- **cooldown**: 900
-				- **armoured**: 0
-				- **damage**: 5
-				- **toArmour**: 0
-				- **toNotArmour**: 0
-				- **health**: 200
-				- **weaponReach**: 90
-				- **mass**: 80
-				- **maxForce**: 60
-				- **dragForce**: 0.89
-				- **scale**: 1
-				- **maxVelocity**: 3
-				- **nuke**: 
-					- **name**: Explosion
-					- **info**: Casts a small area of effect explosion .
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 400
-					- **damage**: 20
-					- **area**: 130
-					- **range**: 420
-					- **fireDamage**: .25
-					- **fireFrames**: 270
-				- *
-				- **electricWall**: 
-					- **name**: Electric Wall
-					- **info**: A line of electricty that damages all units across the field.
-					- **hotkey**: 69
-					- **gold**: 0
-					- **mana**: 35
-					- **effect**: 0
-					- **cooldown**: 360
-					- **time**: 180
-					- **area**: 75
-					- **range**: 400
-					- **damage**: 16
-					- **frequency**: 15
-				- *
-				- **poisonSpray**: 
-					- **name**: Poison Spray
-					- **info**: A spray of poison damages all units in a line.
-					- **hotkey**: 87
-					- **gold**: 0
-					- **mana**: 50
-					- **effect**: 0
-					- **cooldown**: 300
-					- **time**: 60
-					- **range**: 700
-					- **area**: 80
-					- **damage**: 10
-				- *
-				- **population**: 5
-			- *
-			- **monk**: 
-				- **name**: Meric
-				- **info**: A support unit that is able to heal and cure your front line troops.
-				- **role**: Support
-				- **saying**: All is well, I cast a spell!
-				- **hotkey**: 55
-				- **gold**: 300
-				- **mana**: 200
-				- **effect**: 0
-				- **cooldown**: 450
-				- **armoured**: 0
-				- **damage**: 8
-				- **toArmour**: 0
-				- **toNotArmour**: 0
-				- **health**: 180
-				- **weaponReach**: 90
-				- **mass**: 50
-				- **maxForce**: 60
-				- **dragForce**: 0.89
-				- **scale**: 0.9
-				- **maxVelocity**: 3
-				- **amour**: 0
-				- **heal**: 
-					- **name**: Heal
-					- **info**: Heals a single unit.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 75
-					- **amount**: 20
-					- **duration**: 1
-					- **range**: 450
-				- *
-				- **cure**: 
-					- **name**: Cure
-					- **info**: Cures a single unit.
-					- **hotkey**: 87
-					- **gold**: 0
-					- **mana**: 5
-					- **effect**: 0
-					- **cooldown**: 90
-					- **range**: 450
-				- *
-				- **population**: 3
-			- *
-			- **archer**: 
-				- **name**: Archidon
-				- **info**: Basic ranged infantry. Strong in large numbers.
-				- **role**: Light Ranged
-				- **saying**: They will fall before they get a chance to stand.
-				- **hotkey**: 51
-				- **gold**: 300
-				- **mana**: 0
-				- **effect**: 0
-				- **cooldown**: 450
-				- **damage**: 9
-				- **toArmour**: 0
-				- **toNotArmour**: 4
-				- **castleDamage**: 14
-				- **castleToArmour**: 0
-				- **castleToNotArmour**: 0
-				- **castleRange**: 1350
-				- **castleArea**: 100
-				- **castleAreaDamage**: 8
-				- **armoured**: 0
-				- **health**: 55
-				- **mass**: 75
-				- **maxForce**: 55
-				- **dragForce**: 0.89
-				- **scale**: 0.9
-				- **maxVelocity**: 4.8
-				- **arrowVelocity**: 30
-				- **amour**: 0
-				- **maximumRange**: 700
-				- **fire**: 
-					- **name**: Fire Arrow
-					- **info**: Shoots a single fire arrow into the air with increased range and damage.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 5
-					- **effect**: 0
-					- **cooldown**: 500
-					- **range**: 1100
-					- **velocity**: 27
-					- **fireDamage**: .0886
-					- **fireFrames**: 300
-				- *
-				- **population**: 2
-			- *
-			- **flyingCrossbowman**: 
-				- **name**: Flying Crossbowman
-				- **info**: A flying ranged unit.
-				- **role**: Air Heavy Ranged
-				- **saying**: Our bolts will blaze.
-				- **hotkey**: 53
-				- **gold**: 450
-				- **mana**: 200
-				- **effect**: 0
-				- **cooldown**: 720
-				- **damage**: 15
-				- **toArmour**: 2
-				- **toNotArmour**: 0
-				- **armoured**: 1
-				- **health**: 135
-				- **mass**: 75
-				- **maxForce**: 40
-				- **dragForce**: 0.89
-				- **scale**: 1.2
-				- **maxVelocity**: 4
-				- **arrowVelocity**: 25
-				- **legRotateAngleWhenFlying**: 30
-				- **maximumRange**: 625
-				- **population**: 4
-				- **fireDamageToArmour**: 4
-				- **fireDamageToNotArmour**: 0
-				- **fireDamage**: .033
-				- **fireFrames**: 150
-			- *
-			- **miner**: 
-				- **name**: Miner
-				- **info**: Hard working miner.
-				- **role**: Worker
-				- **saying**: Gold please.
-				- **hotkey**: 49
-				- **gold**: 150
-				- **mana**: 0
-				- **effect**: 0
-				- **cooldown**: 240
-				- **armoured**: 0
-				- **damage**: 4
-				- **toArmour**: 2
-				- **toNotArmour**: 0
-				- **health**: 65
-				- **upgradedHealth**: 90
-				- **weaponReach**: 80
-				- **mass**: 200
-				- **maxForce**: 80
-				- **dragForce**: 0.89
-				- **scale**: 0.9
-				- **maxVelocity**: 2.5
-				- **upgradedMaxVelocity**: 4
-				- **amour**: 1
-				- **bagSize**: 75
-				- **miningRate**: 38
-				- **manaMineRate**: 7.5
-				- **population**: 2
-				- **wall**: 
-					- **name**: Wall
-					- **info**: Instructs miner to build a wall.
-					- **hotkey**: 81
-					- **gold**: 200
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 600
-					- **constructionTime**: 300
-					- **constructRange**: 50
-				- *
-			- *
+			- **population**: 2
+		- *
+		- **flyingCrossbowman**: 
+			- **name**: Flying Crossbowman
+			- **info**: A flying ranged unit.
+			- **role**: Air Heavy Ranged
+			- **saying**: Our bolts will blaze.
+			- **hotkey**: 53
+			- **gold**: 450
+			- **mana**: 200
+			- **effect**: 0
+			- **cooldown**: 720
+			- **damage**: 15
+			- **toArmour**: 2
+			- **toNotArmour**: 0
+			- **armoured**: 1
+			- **health**: 135
+			- **mass**: 75
+			- **maxForce**: 40
+			- **dragForce**: 0.89
+			- **scale**: 1.2
+			- **maxVelocity**: 4
+			- **arrowVelocity**: 25
+			- **legRotateAngleWhenFlying**: 30
+			- **maximumRange**: 625
+			- **population**: 4
+			- **fireDamageToArmour**: 4
+			- **fireDamageToNotArmour**: 0
+			- **fireDamage**: .033
+			- **fireFrames**: 150
+		- *
+		- **miner**: 
+			- **name**: Miner
+			- **info**: Hard working miner.
+			- **role**: Worker
+			- **saying**: Gold please.
+			- **hotkey**: 49
+			- **gold**: 150
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 240
+			- **armoured**: 0
+			- **damage**: 4
+			- **toArmour**: 2
+			- **toNotArmour**: 0
+			- **health**: 65
+			- **upgradedHealth**: 90
+			- **weaponReach**: 80
+			- **mass**: 200
+			- **maxForce**: 80
+			- **dragForce**: 0.89
+			- **scale**: 0.9
+			- **maxVelocity**: 2.5
+			- **upgradedMaxVelocity**: 4
+			- **amour**: 1
+			- **bagSize**: 75
+			- **miningRate**: 38
+			- **manaMineRate**: 7.5
+			- **population**: 2
 			- **wall**: 
-				- **name**: Blocking Wall
-				- **info**: Wall
+				- **name**: Wall
+				- **info**: Instructs miner to build a wall.
 				- **hotkey**: 81
 				- **gold**: 200
 				- **mana**: 0
 				- **effect**: 0
-				- **cooldown**: 1200
-				- **health**: 400
-				- **remove**: 
-					- **name**: Destroy Wall
-					- **info**: Causes a wall to remove itself
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 0
-				- *
+				- **cooldown**: 600
+				- **constructionTime**: 300
+				- **constructRange**: 50
 			- *
-			- **giant**: 
-				- **name**: Enslaved Giant
-				- **info**: Captured from the depths of Chaos territory, against its will, the Enslaved Giant hurls giant bolders at your enemy.
-				- **role**: Heavy Range
-				- **saying**: I big rock throw.
-				- **hotkey**: 57
-				- **gold**: 1500
+		- *
+		- **wall**: 
+			- **name**: Blocking Wall
+			- **info**: Wall
+			- **hotkey**: 81
+			- **gold**: 200
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 1200
+			- **health**: 400
+			- **remove**: 
+				- **name**: Destroy Wall
+				- **info**: Causes a wall to remove itself
+				- **hotkey**: 81
+				- **gold**: 0
 				- **mana**: 0
 				- **effect**: 0
-				- **cooldown**: 1200
-				- **armoured**: 1
-				- **damage**: 30
-				- **toArmour**: 25
-				- **toNotArmour**: 0
-				- **debrisDamage**: 0
-				- **health**: 800
-				- **maximumRange**: 550
-				- **weaponReach**: 90
-				- **mass**: 1500
-				- **maxForce**: 3000
-				- **dragForce**: 0.89
-				- **scale**: 2
-				- **maxVelocity**: 3
-				- **baseDamage**: 150
-				- **population**: 7
-				- **projectileVelocity**: 20
-				- **healthI**: 1100
-				- **healthII**: 1500
-				- **growthIScale**: 2.5
-				- **growthIIScale**: 3
-				- **stunTime**: 45
+				- **cooldown**: 0
 			- *
+		- *
+		- **giant**: 
+			- **name**: Enslaved Giant
+			- **info**: Captured from the depths of Chaos territory, against its will, the Enslaved Giant hurls giant bolders at your enemy.
+			- **role**: Heavy Range
+			- **saying**: I big rock throw.
+			- **hotkey**: 57
+			- **gold**: 1500
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 1200
+			- **armoured**: 1
+			- **damage**: 30
+			- **toArmour**: 25
+			- **toNotArmour**: 0
+			- **debrisDamage**: 0
+			- **health**: 800
+			- **maximumRange**: 550
+			- **weaponReach**: 90
+			- **mass**: 1500
+			- **maxForce**: 3000
+			- **dragForce**: 0.89
+			- **scale**: 2
+			- **maxVelocity**: 3
+			- **baseDamage**: 150
+			- **population**: 7
+			- **projectileVelocity**: 20
+			- **healthI**: 1100
+			- **healthII**: 1500
+			- **growthIScale**: 2.5
+			- **growthIIScale**: 3
+			- **stunTime**: 45
 		- *
 	- *
-	- **Elemental**: 
-		- **protectionAmount**: .35
-		- **protectionTime**: 300
-		- **Tech**: 
-			- **castleArchers1**: 
-				- **name**: Castle Element I
-				- **tip**: An untargetable powerful Air Elemental will appear high on your castle walls out of reach from the enemy.
-				- **num**: 5
-				- **cost**: 300
+- *
+- **Elemental**: 
+	- **protectionAmount**: .35
+	- **protectionTime**: 300
+	- **Tech**: 
+		- **castleArchers1**: 
+			- **name**: Castle Element I
+			- **tip**: An untargetable powerful Air Elemental will appear high on your castle walls out of reach from the enemy.
+			- **num**: 5
+			- **cost**: 300
+			- **mana**: 0
+			- **time**: 300
+		- *
+		- **castleArchers2**: 
+			- **name**: Castle Element level II
+			- **tip**: A 2nd untargetable powerful Air Elemental will appear high on your castle walls out of reach from the enemy.
+			- **num**: 5
+			- **cost**: 600
+			- **mana**: 0
+			- **time**: 500
+		- *
+		- **castleArchers3**: 
+			- **name**: Castle Element
+			- **tip**: A 3rd untargetable powerful Air Elemental will appear high on your castle walls out of reach from the enemy.
+			- **num**: 5
+			- **cost**: 1000
+			- **mana**: 0
+			- **time**: 700
+		- *
+		- **split1**: 
+			- **name**: Clone level 1
+			- **tip**: The unit V will gain the ability to create two clones upon command.
+			- **num**: 5
+			- **cost**: 100
+			- **mana**: 100
+			- **time**: 800
+		- *
+		- **split2**: 
+			- **name**: Clone level 2
+			- **tip**: The unit V's clones will do increased damage.
+			- **num**: 5
+			- **cost**: 150
+			- **mana**: 150
+			- **time**: 1200
+		- *
+		- **treePoison**: 
+			- **name**: Scorpling Health
+			- **tip**: Increases Scorpling health.
+			- **num**: 5
+			- **cost**: 200
+			- **mana**: 200
+			- **time**: 1200
+		- *
+		- **treePoison2**: 
+			- **name**: Scorpling Poison
+			- **tip**: Scorplings will cause poison damage.
+			- **num**: 5
+			- **cost**: 200
+			- **mana**: 200
+			- **time**: 1200
+		- *
+		- **lavaPool**: 
+			- **name**: Meteor strike
+			- **tip**: Fire rain ability will include flaming meteors creating a pile of burning rocks causing burn damage.
+			- **num**: 5
+			- **cost**: 300
+			- **mana**: 100
+			- **time**: 900
+		- *
+		- **tornado**: 
+			- **name**: Tornado
+			- **tip**: Unlock the Cycloids ability to cast the Tornado spell.
+			- **num**: 5
+			- **cost**: 200
+			- **mana**: 100
+			- **time**: 900
+		- *
+		- **waterHealUpgrade**: 
+			- **name**: Advanced Healing
+			- **tip**: Increased the amount healed when using Sacrificial Mass Heal Ability.
+			- **num**: 5
+			- **cost**: 300
+			- **mana**: 100
+			- **time**: 1200
+		- *
+	- *
+	- **Units**: 
+		- **airElement**: 
+			- **name**: Air Elemental
+			- **info**: A flying range unit that casts a powerful bolt of lighting on a single target.
+			- **role**: Air Light Ranged
+			- **saying**: I'm always calm before I storm.
+			- **hotkey**: 51
+			- **gold**: 400
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 600
+			- **damage**: 23
+			- **toArmour**: 7
+			- **toNotArmour**: 0
+			- **castleDamage**: 20
+			- **castleToArmour**: 0
+			- **castleToNotArmour**: 0
+			- **castleRange**: 1350
+			- **castleArea**: 150
+			- **castleBurnDamage**: .0533
+			- **castleBurnFrames**: 300
+			- **castleAreaDamage**: 8
+			- **armoured**: 0
+			- **health**: 85
+			- **mass**: 75
+			- **maxForce**: 60
+			- **dragForce**: 0.89
+			- **scale**: 0.9
+			- **maxVelocity**: 5.5
+			- **velocity**: 12
+			- **amour**: 0
+			- **population**: 3
+			- **arrowVelocity**: 500
+			- **legRotateAngleWhenFlying**: 30
+			- **maximumRange**: 580
+		- *
+		- **waterElement**: 
+			- **name**: Water Elemental
+			- **info**: Quick support unit with mass heal and cure upon death. Also has ability to freeze an enemy into a block of ice.
+			- **role**: Suppor
+			- **saying**: I am life you are death.
+			- **hotkey**: 51
+			- **gold**: 350
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 360
+			- **damage**: 0
+			- **toArmour**: 0
+			- **toNotArmour**: 4
+			- **castleDamage**: 14
+			- **castleToArmour**: 0
+			- **castleToNotArmour**: 0
+			- **castleRange**: 1350
+			- **castleArea**: 100
+			- **castleAreaDamage**: 8
+			- **armoured**: 0
+			- **health**: 150
+			- **mass**: 65
+			- **maxForce**: 55
+			- **dragForce**: 0.89
+			- **scale**: 0.9
+			- **maxVelocity**: 6.2
+			- **velocity**: 18
+			- **amour**: 0
+			- **maximumRange**: 400
+			- **population**: 2
+			- **healRadius**: 250
+			- **healAmount**: 65
+			- **maxHealAmount**: 260
+			- **healRadiusUpgrade**: 350
+			- **healAmountUpgrade**: 175
+			- **maxHealAmountUpgrade**: 875
+			- **heal**: 
+				- **name**: Sacrificial Mass Heal
+				- **info**: This unit will sacrifice itself creating a explosion of healing and curing power healing all nearby friendly units.
+				- **hotkey**: 81
+				- **gold**: 0
 				- **mana**: 0
-				- **time**: 300
-			- *
-			- **castleArchers2**: 
-				- **name**: Castle Element level II
-				- **tip**: A 2nd untargetable powerful Air Elemental will appear high on your castle walls out of reach from the enemy.
-				- **num**: 5
-				- **cost**: 600
-				- **mana**: 0
-				- **time**: 500
-			- *
-			- **castleArchers3**: 
-				- **name**: Castle Element
-				- **tip**: A 3rd untargetable powerful Air Elemental will appear high on your castle walls out of reach from the enemy.
-				- **num**: 5
-				- **cost**: 1000
-				- **mana**: 0
-				- **time**: 700
-			- *
-			- **split1**: 
-				- **name**: Clone level 1
-				- **tip**: The unit V will gain the ability to create two clones upon command.
-				- **num**: 5
-				- **cost**: 100
-				- **mana**: 100
-				- **time**: 800
-			- *
-			- **split2**: 
-				- **name**: Clone level 2
-				- **tip**: The unit V's clones will do increased damage.
-				- **num**: 5
-				- **cost**: 150
-				- **mana**: 150
-				- **time**: 1200
-			- *
-			- **treePoison**: 
-				- **name**: Scorpling Health
-				- **tip**: Increases Scorpling health.
-				- **num**: 5
-				- **cost**: 200
-				- **mana**: 200
-				- **time**: 1200
-			- *
-			- **treePoison2**: 
-				- **name**: Scorpling Poison
-				- **tip**: Scorplings will cause poison damage.
-				- **num**: 5
-				- **cost**: 200
-				- **mana**: 200
-				- **time**: 1200
-			- *
-			- **lavaPool**: 
-				- **name**: Meteor strike
-				- **tip**: Fire rain ability will include flaming meteors creating a pile of burning rocks causing burn damage.
-				- **num**: 5
-				- **cost**: 300
-				- **mana**: 100
-				- **time**: 900
-			- *
-			- **tornado**: 
-				- **name**: Tornado
-				- **tip**: Unlock the Cycloids ability to cast the Tornado spell.
-				- **num**: 5
-				- **cost**: 200
-				- **mana**: 100
-				- **time**: 900
-			- *
-			- **waterHealUpgrade**: 
-				- **name**: Advanced Healing
-				- **tip**: Increased the amount healed when using Sacrificial Mass Heal Ability.
-				- **num**: 5
-				- **cost**: 300
-				- **mana**: 100
-				- **time**: 1200
+				- **effect**: 0
+				- **cooldown**: 300
+				- **range**: 800
 			- *
 		- *
-		- **Units**: 
-			- **airElement**: 
-				- **name**: Air Elemental
-				- **info**: A flying range unit that casts a powerful bolt of lighting on a single target.
-				- **role**: Air Light Ranged
-				- **saying**: I'm always calm before I storm.
-				- **hotkey**: 51
-				- **gold**: 400
+		- **earthElement**: 
+			- **name**: Earth Elemental
+			- **info**: A cheap basic ground unit with a stun attack.  It can also transform into a miner.
+			- **role**: Light Melee
+			- **saying**: We will, we will, punch you!
+			- **hotkey**: 51
+			- **gold**: 150
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 120
+			- **weaponReach**: 80
+			- **damage**: 7
+			- **toArmour**: 6
+			- **toNotArmour**: 0
+			- **stunXForce**: 1
+			- **stunYForce**: 1
+			- **stunFrames**: 45
+			- **armoured**: 0
+			- **health**: 100
+			- **mass**: 75
+			- **maxForce**: 55
+			- **dragForce**: 0.89
+			- **scale**: 1.0
+			- **maxVelocity**: 5
+			- **maximumRange**: 400
+			- **population**: 2
+		- *
+		- **fireElement**: 
+			- **name**: Fire Elemental
+			- **info**: A ranged ground unit that throws a ball of fire.  This unit can kite and its projectile causes burn damage.
+			- **role**: Ranged
+			- **saying**: Everything burns if its hot enough.
+			- **hotkey**: 51
+			- **gold**: 450
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 480
+			- **burnDamage**: .0808
+			- **burnFrames**: 210
+			- **damage**: 10
+			- **toArmour**: 7
+			- **toNotArmour**: 0
+			- **armoured**: 0
+			- **health**: 100
+			- **mass**: 75
+			- **maxForce**: 55
+			- **dragForce**: 0.89
+			- **scale**: 0.9
+			- **maxVelocity**: 4.8
+			- **velocity**: 17
+			- **amour**: 0
+			- **maximumRange**: 575
+			- **population**: 3
+		- *
+		- **scorpionElement**: 
+			- **name**: Scorpling
+			- **info**: A unit spawned from the mouth of the Treature.  This fast weak unit has the ability to poison with its attack if upgraded.
+			- **role**: Light Melee
+			- **saying**: Brrddttt brddttt.
+			- **hotkey**: 51
+			- **gold**: 0
+			- **mana**: 10
+			- **effect**: 0
+			- **weaponReach**: 80
+			- **cooldown**: 30
+			- **damage**: 7
+			- **toArmour**: 0
+			- **toNotArmour**: 3
+			- **poisonDamage**: 6
+			- **level2Health**: 85
+			- **level2Scale**: 1.55
+			- **armoured**: 0
+			- **health**: 60
+			- **mass**: 55
+			- **maxForce**: 34
+			- **dragForce**: 0.89
+			- **scale**: 1.25
+			- **maxVelocity**: 10
+			- **velocity**: 18
+			- **maximumRange**: 400
+			- **population**: 0
+		- *
+		- **treeElement**: 
+			- **name**: Treature
+			- **info**: A massive slow moving caster that can spawn Scorplings and suck life from its enemies.
+			- **role**: Heavy Caster
+			- **saying**: Say hello to my little friends.
+			- **hotkey**: 51
+			- **gold**: 0
+			- **mana**: 100
+			- **effect**: 0
+			- **cooldown**: 0
+			- **damage**: 9
+			- **toArmour**: 0
+			- **toNotArmour**: 4
+			- **armoured**: 1
+			- **health**: 500
+			- **mass**: 200
+			- **maxForce**: 80
+			- **dragForce**: 0.89
+			- **scale**: 1.1
+			- **maxVelocity**: 11
+			- **velocity**: 5
+			- **maximumRange**: 400
+			- **population**: 9
+			- **stunAmount**: 30
+			- **damageAmount**: 40
+			- **healAmount**: 1
+			- **healDuration**: 40
+			- **scorpionSpawnManaCost**: 3
+			- **respawnTime**: 642
+			- **flower**: 
+				- **name**: Death Blossom
+				- **info**: Casts a row of dead flowers that chase the targeted enemy then stun them with a spike root stealing life and blossoming the dead flowers.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 30
+				- **effect**: 0
+				- **cooldown**: 560
+				- **range**: 800
+			- *
+			- **root**: 
+				- **name**: Summon Scorplings
+				- **info**: The tree will root itself into the ground and summon Scorplings from its hollow.
+				- **hotkey**: 81
+				- **gold**: 0
 				- **mana**: 0
+				- **effect**: 0
+				- **cooldown**: 330
+				- **range**: 800
+			- *
+		- *
+		- **hurricaneElement**: 
+			- **name**: Cycloid
+			- **info**: A flying melee support caster with the ability to protect units and throw powerful stunning tornados.
+			- **role**: Ai
+			- **saying**: The skies belong to me.
+			- **hotkey**: 51
+			- **gold**: 0
+			- **mana**: 100
+			- **effect**: 0
+			- **cooldown**: 0
+			- **damage**: 20
+			- **toArmour**: 5
+			- **toNotArmour**: 0
+			- **weaponReach**: 100
+			- **armoured**: 0
+			- **health**: 250
+			- **mass**: 75
+			- **maxForce**: 60
+			- **dragForce**: 0.89
+			- **scale**: 1.3
+			- **maxVelocity**: 8
+			- **velocity**: 18
+			- **maximumRange**: 400
+			- **population**: 4
+			- **hurricane**: 
+				- **name**: Tornado
+				- **info**: Summons a large tornado causing a path of destruction.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 35
+				- **effect**: 0
+				- **cooldown**: 560
+				- **amount**: 20
+				- **duration**: 1
+				- **range**: 550
+				- **stunFrames**: 120
+				- **stunForce**: 4
+				- **damage**: 30
+				- **area**: 50
+			- *
+			- **protect**: 
+				- **name**: Protect
+				- **info**: Casts a temporary shield on itself or a targeted friendly unit.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 20
 				- **effect**: 0
 				- **cooldown**: 600
-				- **damage**: 23
-				- **toArmour**: 7
-				- **toNotArmour**: 0
-				- **castleDamage**: 20
-				- **castleToArmour**: 0
-				- **castleToNotArmour**: 0
-				- **castleRange**: 1350
-				- **castleArea**: 150
-				- **castleBurnDamage**: .0533
-				- **castleBurnFrames**: 300
-				- **castleAreaDamage**: 8
-				- **armoured**: 0
-				- **health**: 85
-				- **mass**: 75
-				- **maxForce**: 60
-				- **dragForce**: 0.89
-				- **scale**: 0.9
-				- **maxVelocity**: 5.5
-				- **velocity**: 12
-				- **amour**: 0
-				- **population**: 3
-				- **arrowVelocity**: 500
-				- **legRotateAngleWhenFlying**: 30
-				- **maximumRange**: 580
-			- *
-			- **waterElement**: 
-				- **name**: Water Elemental
-				- **info**: Quick support unit with mass heal and cure upon death. Also has ability to freeze an enemy into a block of ice.
-				- **role**: Suppor
-				- **saying**: I am life you are death.
-				- **hotkey**: 51
-				- **gold**: 350
-				- **mana**: 0
-				- **effect**: 0
-				- **cooldown**: 360
-				- **damage**: 0
-				- **toArmour**: 0
-				- **toNotArmour**: 4
-				- **castleDamage**: 14
-				- **castleToArmour**: 0
-				- **castleToNotArmour**: 0
-				- **castleRange**: 1350
-				- **castleArea**: 100
-				- **castleAreaDamage**: 8
-				- **armoured**: 0
-				- **health**: 150
-				- **mass**: 65
-				- **maxForce**: 55
-				- **dragForce**: 0.89
-				- **scale**: 0.9
-				- **maxVelocity**: 6.2
-				- **velocity**: 18
-				- **amour**: 0
-				- **maximumRange**: 400
-				- **population**: 2
-				- **healRadius**: 250
-				- **healAmount**: 65
-				- **maxHealAmount**: 260
-				- **healRadiusUpgrade**: 350
-				- **healAmountUpgrade**: 175
-				- **maxHealAmountUpgrade**: 875
-				- **heal**: 
-					- **name**: Sacrificial Mass Heal
-					- **info**: This unit will sacrifice itself creating a explosion of healing and curing power healing all nearby friendly units.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 300
-					- **range**: 800
-				- *
-			- *
-			- **earthElement**: 
-				- **name**: Earth Elemental
-				- **info**: A cheap basic ground unit with a stun attack.  It can also transform into a miner.
-				- **role**: Light Melee
-				- **saying**: We will, we will, punch you!
-				- **hotkey**: 51
-				- **gold**: 150
-				- **mana**: 0
-				- **effect**: 0
-				- **cooldown**: 120
-				- **weaponReach**: 80
-				- **damage**: 7
-				- **toArmour**: 6
-				- **toNotArmour**: 0
-				- **stunXForce**: 1
-				- **stunYForce**: 1
-				- **stunFrames**: 45
-				- **armoured**: 0
-				- **health**: 100
-				- **mass**: 75
-				- **maxForce**: 55
-				- **dragForce**: 0.89
-				- **scale**: 1.0
-				- **maxVelocity**: 5
-				- **maximumRange**: 400
-				- **population**: 2
-			- *
-			- **fireElement**: 
-				- **name**: Fire Elemental
-				- **info**: A ranged ground unit that throws a ball of fire.  This unit can kite and its projectile causes burn damage.
-				- **role**: Ranged
-				- **saying**: Everything burns if its hot enough.
-				- **hotkey**: 51
-				- **gold**: 450
-				- **mana**: 0
-				- **effect**: 0
-				- **cooldown**: 480
-				- **burnDamage**: .0808
-				- **burnFrames**: 210
-				- **damage**: 10
-				- **toArmour**: 7
-				- **toNotArmour**: 0
-				- **armoured**: 0
-				- **health**: 100
-				- **mass**: 75
-				- **maxForce**: 55
-				- **dragForce**: 0.89
-				- **scale**: 0.9
-				- **maxVelocity**: 4.8
-				- **velocity**: 17
-				- **amour**: 0
-				- **maximumRange**: 575
-				- **population**: 3
-			- *
-			- **scorpionElement**: 
-				- **name**: Scorpling
-				- **info**: A unit spawned from the mouth of the Treature.  This fast weak unit has the ability to poison with its attack if upgraded.
-				- **role**: Light Melee
-				- **saying**: Brrddttt brddttt.
-				- **hotkey**: 51
-				- **gold**: 0
-				- **mana**: 10
-				- **effect**: 0
-				- **weaponReach**: 80
-				- **cooldown**: 30
-				- **damage**: 7
-				- **toArmour**: 0
-				- **toNotArmour**: 3
-				- **poisonDamage**: 6
-				- **level2Health**: 85
-				- **level2Scale**: 1.55
-				- **armoured**: 0
-				- **health**: 60
-				- **mass**: 55
-				- **maxForce**: 34
-				- **dragForce**: 0.89
-				- **scale**: 1.25
-				- **maxVelocity**: 10
-				- **velocity**: 18
-				- **maximumRange**: 400
-				- **population**: 0
-			- *
-			- **treeElement**: 
-				- **name**: Treature
-				- **info**: A massive slow moving caster that can spawn Scorplings and suck life from its enemies.
-				- **role**: Heavy Caster
-				- **saying**: Say hello to my little friends.
-				- **hotkey**: 51
-				- **gold**: 0
-				- **mana**: 100
-				- **effect**: 0
-				- **cooldown**: 0
-				- **damage**: 9
-				- **toArmour**: 0
-				- **toNotArmour**: 4
-				- **armoured**: 1
-				- **health**: 500
-				- **mass**: 200
-				- **maxForce**: 80
-				- **dragForce**: 0.89
-				- **scale**: 1.1
-				- **maxVelocity**: 11
-				- **velocity**: 5
-				- **maximumRange**: 400
-				- **population**: 9
-				- **stunAmount**: 30
-				- **damageAmount**: 40
-				- **healAmount**: 1
-				- **healDuration**: 40
-				- **scorpionSpawnManaCost**: 3
-				- **respawnTime**: 642
-				- **flower**: 
-					- **name**: Death Blossom
-					- **info**: Casts a row of dead flowers that chase the targeted enemy then stun them with a spike root stealing life and blossoming the dead flowers.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 30
-					- **effect**: 0
-					- **cooldown**: 560
-					- **range**: 800
-				- *
-				- **root**: 
-					- **name**: Summon Scorplings
-					- **info**: The tree will root itself into the ground and summon Scorplings from its hollow.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 330
-					- **range**: 800
-				- *
-			- *
-			- **hurricaneElement**: 
-				- **name**: Cycloid
-				- **info**: A flying melee support caster with the ability to protect units and throw powerful stunning tornados.
-				- **role**: Ai
-				- **saying**: The skies belong to me.
-				- **hotkey**: 51
-				- **gold**: 0
-				- **mana**: 100
-				- **effect**: 0
-				- **cooldown**: 0
-				- **damage**: 20
-				- **toArmour**: 5
-				- **toNotArmour**: 0
-				- **weaponReach**: 100
-				- **armoured**: 0
-				- **health**: 250
-				- **mass**: 75
-				- **maxForce**: 60
-				- **dragForce**: 0.89
-				- **scale**: 1.3
-				- **maxVelocity**: 8
-				- **velocity**: 18
-				- **maximumRange**: 400
-				- **population**: 4
-				- **hurricane**: 
-					- **name**: Tornado
-					- **info**: Summons a large tornado causing a path of destruction.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 35
-					- **effect**: 0
-					- **cooldown**: 560
-					- **amount**: 20
-					- **duration**: 1
-					- **range**: 550
-					- **stunFrames**: 120
-					- **stunForce**: 4
-					- **damage**: 30
-					- **area**: 50
-				- *
-				- **protect**: 
-					- **name**: Protect
-					- **info**: Casts a temporary shield on itself or a targeted friendly unit.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 20
-					- **effect**: 0
-					- **cooldown**: 600
-					- **range**: 500
-				- *
-			- *
-			- **lavaElement**: 
-				- **name**: Charrog
-				- **info**: Heavy armored ground infantry with the ability to burrow and burn.
-				- **role**: Mele
-				- **saying**: Soon your pain will be gone.
-				- **hotkey**: 51
-				- **gold**: 0
-				- **mana**: 100
-				- **effect**: 0
-				- **cooldown**: 0
-				- **weaponReach**: 80
-				- **damage**: 10
-				- **toArmour**: 4
-				- **toNotArmour**: 0
-				- **towerSpawnIIHealth**: 1400
-				- **towerSpawnIIDamage**: 25
-				- **towerSpawnIIScale**: 2
-				- **armoured**: 1
-				- **health**: 650
-				- **mass**: 100
-				- **maxForce**: 80
-				- **dragForce**: 0.89
-				- **scale**: 1.2
-				- **maxVelocity**: 5.4
-				- **maxVelocityUnderground**: 4.2
-				- **velocity**: 22
-				- **maximumRange**: 400
-				- **population**: 4
-				- **radiant**: 
-					- **name**: Radiant Heat
-					- **info**: The Charrog will glow with heat causing burn damage to all nearby units.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 30
-					- **effect**: 300
-					- **cooldown**: 600
-					- **range**: 75
-					- **damage**: .1
-					- **frames**: 90
-				- *
-				- **burrow**: 
-					- **name**: Burrow
-					- **info**: The Charrog will dig itself into the ground and can not be detected or damaged by the enemy.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 550
-					- **cooldown**: 560
-					- **amount**: 20
-					- **duration**: 1
-					- **range**: 100
-					- **damage**: 50
-					- **stun**: 60
-				- *
-				- **unburrow**: 
-					- **name**: Unburrow
-					- **info**: The Charrog will shoot out from the ground then slam himself on down stunning and damaging nearby units.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 75
-				- *
-			- *
-			- **chrome**: 
-				- **name**: V
-				- **info**: A powerful caster and leader of Elementals. V can clone itself into 3, teleport and possess other units.
-				- **role**: Spellcaste
-				- **saying**: I will be your God once again!
-				- **hotkey**: 81
-				- **gold**: 150
-				- **mana**: 100
-				- **effect**: 0
-				- **cooldown**: 240
-				- **weaponReach**: 80
-				- **armoured**: 0
-				- **damage**: 30
-				- **toArmour**: 0
-				- **toNotArmour**: 5
-				- **health**: 200
-				- **upgradedHealth**: 450
-				- **mass**: 75
-				- **maxForce**: 70
-				- **dragForce**: 0.89
-				- **scale**: 0.9
-				- **maxVelocity**: 5
-				- **population**: 10
-				- **convert**: 
-					- **name**: Possess 
-					- **info**: Target an enemy unit to control it for as long as you can maintain Possess mode.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 50
-					- **effect**: 0
-					- **cooldown**: 600
-					- **range**: 600
-				- *
-				- **split**: 
-					- **name**: Clone
-					- **info**: Creates two identical looking V units which auto attack the enemy.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 50
-					- **effect**: 0
-					- **cooldown**: 900
-					- **range**: 400
-					- **splitDamage1**: .33
-					- **splitDamage2**: .66
-					- **cloneAfterDeadFrames**: 900
-				- *
-				- **teleport**: 
-					- **name**: Flash
-					- **info**: Instant teleportation to and through to the targeted location.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 200
-					- **range**: 600
-				- *
-			- *
-			- **firestormElement**: 
-				- **name**: Infernos
-				- **info**: A powerfull caster with the ability to summon the mighty dragon "Vastolis" and call down a rain of fire.
-				- **role**: Spellcaster
-				- **saying**: Awaken Vastolis, it's time to feed!
-				- **hotkey**: 81
-				- **gold**: 150
-				- **mana**: 100
-				- **effect**: 0
-				- **cooldown**: 240
-				- **weaponReach**: 80
-				- **armoured**: 0
-				- **damage**: 4
-				- **toArmour**: 2
-				- **toNotArmour**: 0
-				- **health**: 225
-				- **upgradedHealth**: 90
-				- **mass**: 200
-				- **maxForce**: 150
-				- **dragForce**: 0.89
-				- **scale**: 1
-				- **maxVelocity**: 4
-				- **population**: 5
-				- **firestorm**: 
-					- **name**: Dragon Call 
-					- **info**: Summon the mighty dragon "Vastolis" from the depths to cause mass devastation to the enemy.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 30
-					- **effect**: 0
-					- **cooldown**: 900
-					- **range**: 600
-					- **area**: 130
-					- **fireFrames**: 100
-					- **fireDamage**: .5
-					- **damage**: 70
-					- **stunForce**: 4
-				- *
-				- **firebreath**: 
-					- **name**: Fire Rain
-					- **info**: Calls down a rain of fire to the selected location inflicting burn damage on the enemy.  Upgradable to Meteor Strike for increased damage.
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 20
-					- **effect**: 0
-					- **cooldown**: 500
-					- **range**: 575
-					- **area**: 250
-					- **damage**: 8
-					- **rainDamage**: 7
-					- **cometDamage**: 25
-					- **poolFireFrames**: 35
-					- **poolFireDamage**: 1
-				- *
-			- *
-			- **miner**: 
-				- **name**: Chompler
-				- **info**: A hard working miner that will eat gold and collect it in his back, as well as pray for mana at the statue.  It can also attack with its sharp beak and claws.
-				- **role**: Worker
-				- **saying**: It's all about texture
-				- **hotkey**: 81
-				- **gold**: 150
-				- **mana**: 0
-				- **effect**: 0
-				- **cooldown**: 240
-				- **weaponReach**: 80
-				- **armoured**: 0
-				- **damage**: 4
-				- **toArmour**: 2
-				- **toNotArmour**: 0
-				- **health**: 65
-				- **upgradedHealth**: 90
-				- **weaponReach**: 80
-				- **mass**: 200
-				- **maxForce**: 80
-				- **dragForce**: 0.89
-				- **scale**: 1.2
-				- **maxVelocity**: 2.5
-				- **upgradedMaxVelocity**: 4
-				- **amour**: 1
-				- **bagSize**: 75
-				- **miningRate**: 37.5
-				- **manaMineRate**: 7.5
-				- **population**: 2
-				- **morph**: 
-					- **name**: Morph
-					- **info**: Converts unit into a miner
-					- **hotkey**: 81
-					- **gold**: 0
-					- **mana**: 0
-					- **effect**: 0
-					- **cooldown**: 0
-				- *
-			- *
-			- **fireWater**: 
-				- **name**: Scorch
-				- **info**: The most powerful known explosion that will cause mass knock back and burn damage.
-				- **hotkey**: 81
-				- **gold**: 150
-				- **mana**: 0
-				- **effect**: 0
-				- **cooldown**: 0
-				- **damage**: 50
-				- **burnDamage**: 1
-				- **burnFrames**: 30
-				- **stunFrames**: 45
-				- **stunForce**: 1
-				- **range**: 200
-				- **pushBack**: 25
-			- *
-			- **sandstorm**: 
-				- **name**: Blind Gate
-				- **info**: A temporary gate rises from the ground that the enemy cannot see past.
-				- **hotkey**: 81
-				- **gold**: 150
-				- **mana**: 0
-				- **effect**: 0
-				- **cooldown**: 0
-				- **lifeFrames**: 1200
+				- **range**: 500
 			- *
 		- *
+		- **lavaElement**: 
+			- **name**: Charrog
+			- **info**: Heavy armored ground infantry with the ability to burrow and burn.
+			- **role**: Mele
+			- **saying**: Soon your pain will be gone.
+			- **hotkey**: 51
+			- **gold**: 0
+			- **mana**: 100
+			- **effect**: 0
+			- **cooldown**: 0
+			- **weaponReach**: 80
+			- **damage**: 10
+			- **toArmour**: 4
+			- **toNotArmour**: 0
+			- **towerSpawnIIHealth**: 1400
+			- **towerSpawnIIDamage**: 25
+			- **towerSpawnIIScale**: 2
+			- **armoured**: 1
+			- **health**: 650
+			- **mass**: 100
+			- **maxForce**: 80
+			- **dragForce**: 0.89
+			- **scale**: 1.2
+			- **maxVelocity**: 5.4
+			- **maxVelocityUnderground**: 4.2
+			- **velocity**: 22
+			- **maximumRange**: 400
+			- **population**: 4
+			- **radiant**: 
+				- **name**: Radiant Heat
+				- **info**: The Charrog will glow with heat causing burn damage to all nearby units.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 30
+				- **effect**: 300
+				- **cooldown**: 600
+				- **range**: 75
+				- **damage**: .1
+				- **frames**: 90
+			- *
+			- **burrow**: 
+				- **name**: Burrow
+				- **info**: The Charrog will dig itself into the ground and can not be detected or damaged by the enemy.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 0
+				- **effect**: 550
+				- **cooldown**: 560
+				- **amount**: 20
+				- **duration**: 1
+				- **range**: 100
+				- **damage**: 50
+				- **stun**: 60
+			- *
+			- **unburrow**: 
+				- **name**: Unburrow
+				- **info**: The Charrog will shoot out from the ground then slam himself on down stunning and damaging nearby units.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 0
+				- **effect**: 0
+				- **cooldown**: 75
+			- *
+		- *
+		- **chrome**: 
+			- **name**: V
+			- **info**: A powerful caster and leader of Elementals. V can clone itself into 3, teleport and possess other units.
+			- **role**: Spellcaste
+			- **saying**: I will be your God once again!
+			- **hotkey**: 81
+			- **gold**: 150
+			- **mana**: 100
+			- **effect**: 0
+			- **cooldown**: 240
+			- **weaponReach**: 80
+			- **armoured**: 0
+			- **damage**: 30
+			- **toArmour**: 0
+			- **toNotArmour**: 5
+			- **health**: 200
+			- **upgradedHealth**: 450
+			- **mass**: 75
+			- **maxForce**: 70
+			- **dragForce**: 0.89
+			- **scale**: 0.9
+			- **maxVelocity**: 5
+			- **population**: 10
+			- **convert**: 
+				- **name**: Possess 
+				- **info**: Target an enemy unit to control it for as long as you can maintain Possess mode.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 50
+				- **effect**: 0
+				- **cooldown**: 600
+				- **range**: 600
+			- *
+			- **split**: 
+				- **name**: Clone
+				- **info**: Creates two identical looking V units which auto attack the enemy.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 50
+				- **effect**: 0
+				- **cooldown**: 900
+				- **range**: 400
+				- **splitDamage1**: .33
+				- **splitDamage2**: .66
+				- **cloneAfterDeadFrames**: 900
+			- *
+			- **teleport**: 
+				- **name**: Flash
+				- **info**: Instant teleportation to and through to the targeted location.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 0
+				- **effect**: 0
+				- **cooldown**: 200
+				- **range**: 600
+			- *
+		- *
+		- **firestormElement**: 
+			- **name**: Infernos
+			- **info**: A powerfull caster with the ability to summon the mighty dragon "Vastolis" and call down a rain of fire.
+			- **role**: Spellcaster
+			- **saying**: Awaken Vastolis, it's time to feed!
+			- **hotkey**: 81
+			- **gold**: 150
+			- **mana**: 100
+			- **effect**: 0
+			- **cooldown**: 240
+			- **weaponReach**: 80
+			- **armoured**: 0
+			- **damage**: 4
+			- **toArmour**: 2
+			- **toNotArmour**: 0
+			- **health**: 225
+			- **upgradedHealth**: 90
+			- **mass**: 200
+			- **maxForce**: 150
+			- **dragForce**: 0.89
+			- **scale**: 1
+			- **maxVelocity**: 4
+			- **population**: 5
+			- **firestorm**: 
+				- **name**: Dragon Call 
+				- **info**: Summon the mighty dragon "Vastolis" from the depths to cause mass devastation to the enemy.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 30
+				- **effect**: 0
+				- **cooldown**: 900
+				- **range**: 600
+				- **area**: 130
+				- **fireFrames**: 100
+				- **fireDamage**: .5
+				- **damage**: 70
+				- **stunForce**: 4
+			- *
+			- **firebreath**: 
+				- **name**: Fire Rain
+				- **info**: Calls down a rain of fire to the selected location inflicting burn damage on the enemy.  Upgradable to Meteor Strike for increased damage.
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 20
+				- **effect**: 0
+				- **cooldown**: 500
+				- **range**: 575
+				- **area**: 250
+				- **damage**: 8
+				- **rainDamage**: 7
+				- **cometDamage**: 25
+				- **poolFireFrames**: 35
+				- **poolFireDamage**: 1
+			- *
+		- *
+		- **miner**: 
+			- **name**: Chompler
+			- **info**: A hard working miner that will eat gold and collect it in his back, as well as pray for mana at the statue.  It can also attack with its sharp beak and claws.
+			- **role**: Worker
+			- **saying**: It's all about texture
+			- **hotkey**: 81
+			- **gold**: 150
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 240
+			- **weaponReach**: 80
+			- **armoured**: 0
+			- **damage**: 4
+			- **toArmour**: 2
+			- **toNotArmour**: 0
+			- **health**: 65
+			- **upgradedHealth**: 90
+			- **weaponReach**: 80
+			- **mass**: 200
+			- **maxForce**: 80
+			- **dragForce**: 0.89
+			- **scale**: 1.2
+			- **maxVelocity**: 2.5
+			- **upgradedMaxVelocity**: 4
+			- **amour**: 1
+			- **bagSize**: 75
+			- **miningRate**: 37.5
+			- **manaMineRate**: 7.5
+			- **population**: 2
+			- **morph**: 
+				- **name**: Morph
+				- **info**: Converts unit into a miner
+				- **hotkey**: 81
+				- **gold**: 0
+				- **mana**: 0
+				- **effect**: 0
+				- **cooldown**: 0
+			- *
+		- *
+		- **fireWater**: 
+			- **name**: Scorch
+			- **info**: The most powerful known explosion that will cause mass knock back and burn damage.
+			- **hotkey**: 81
+			- **gold**: 150
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 0
+			- **damage**: 50
+			- **burnDamage**: 1
+			- **burnFrames**: 30
+			- **stunFrames**: 45
+			- **stunForce**: 1
+			- **range**: 200
+			- **pushBack**: 25
+		- *
+		- **sandstorm**: 
+			- **name**: Blind Gate
+			- **info**: A temporary gate rises from the ground that the enemy cannot see past.
+			- **hotkey**: 81
+			- **gold**: 150
+			- **mana**: 0
+			- **effect**: 0
+			- **cooldown**: 0
+			- **lifeFrames**: 1200
+		- *
 	- *
-	- **credits**: 
+- *
+- **credits**: 
 Created by: Jason Whitham, Brock White and Winston Zhang.
 Directed, Animated, Written, and Balanced by: Jason Whitham (CRAZY JAY)
 Programmed by: Brock White

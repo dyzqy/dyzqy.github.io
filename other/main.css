@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     color: black;
 }
-h1, h2, h3 {
+h1, h3 {
     font-family: Arial, sans-serif;
     font-weight: bolder;
     /*text-decoration: underline;*/
@@ -10,6 +10,15 @@ h1, h2, h3 {
     padding: 0;
     margin: 0%;
     font-size: 45px;
+}
+h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    /*text-decoration: underline;*/
+    letter-spacing: -0.5px;
+    padding: 0;
+    margin: 0%;
+    font-size: 25px;
 }
 p {
     font-family: Arial, sans-serif;
