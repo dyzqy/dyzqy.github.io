@@ -2,4 +2,10 @@ body {
     font-family: Arial, sans-serif;
     color: #24292E;
 }
-/* text color of md #24292E*/
+
+/*@media (prefers-color-scheme: dark) {
+    body {
+        color: #D8D5D1;
+        background-color: #181A1B;
+    }
+}*/
