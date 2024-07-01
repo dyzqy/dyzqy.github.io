@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 0px;
-    padding: 20px 150px 10px 150px;
+    padding: 20px 150px 50px 150px;
 }
 
 .card {
@@ -60,7 +60,7 @@
 }
 
 .card-content {
-    padding: 3px 15px 10px 15px;
+    padding: 3px 15px 40px 15px;
 }
 
 .card-title {
