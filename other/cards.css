@@ -3,7 +3,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 0px;
-    padding: 20px 150px 50px 150px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    /*device-width*/
 }
 
 .card {
@@ -47,6 +51,11 @@
     .card-title {
         color: #D8D5D1;
     }
+}
+
+.card
+{
+    margin-bottom: 10px;
 }
 
 .card a {

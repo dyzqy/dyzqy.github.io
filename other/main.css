@@ -129,19 +129,25 @@ th {
     }
 }
 
-::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-  }
-  
-  /* Style the scrollbar thumb */
-  ::-webkit-scrollbar-thumb {
-    background-color: lightgray; /* Set the thumb color */
-    border-radius: 10px; /* Round the edges of the thumb */
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+.contributionsChart {
+    margin: 0px 175px 0px 175px;
+}
+
+::-webkit-scrollbar 
+{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
     background-color: gray;
-  }
+}
 
 #note {
     font-size: 15px;
