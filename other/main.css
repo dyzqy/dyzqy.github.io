@@ -133,6 +133,17 @@ th {
     margin: 0px 175px 0px 175px;
 }
 
+@media (max-width: 832px) {
+    .contributionsChart {
+        margin: 0px 75px 0px 75px;
+    }
+}
+@media (max-width: 630px) {
+    .contributionsChart {
+        margin: 0px;
+    }
+}
+
 ::-webkit-scrollbar 
 {
     width: 12px;
