@@ -4,7 +4,7 @@ const fetchContributions = async (username) => {
         throw new Error('Network response was not ok');
     }
     const data = await response.json();
-    
+
     // Process the events to count contributions per day
     const contributions = {};
     data.forEach(event => {
@@ -21,6 +21,9 @@ const fetchContributions = async (username) => {
         contributionCount: contributions[date]
     }));
 
+    // Sort contributions by date (oldest to newest)
+    contributionArray.sort((a, b) => new Date(a.date) - new Date(b.date));
+
     return contributionArray;
 };
 
@@ -33,14 +36,19 @@ const prepareChartData = (contributions) => {
 const createChart = (dates, contributions) => {
     const ctx = document.getElementById('contributionsChart').getContext('2d');
     new Chart(ctx, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: dates,
             datasets: [{
                 label: 'Contributions',
                 data: contributions,
-                backgroundColor: 'rgb(113, 227, 180)',
-                borderWidth: 0
+                backgroundColor: 'rgb(113, 227, 180, 0.5)',
+
+                fill: true,
+                borderWidth: 3,
+                borderColor: 'rgb(113, 227, 180)',
+                lineTenstion: 0.1
+                
             }]
         },
         options: {
