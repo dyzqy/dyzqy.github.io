@@ -81,6 +81,18 @@
       <div id="overlay"></div>
       <ruffle-player id="player"></ruffle-player>
     </div>
+    <div id="web-url-container">
+      <form id="web-url-form">
+        <input id="web-url" placeholder="URL of a .swf file on the web" type="text" name="web-url">
+        <button id="web-form-submit" type="submit">Load</button>
+      </form>
+    </div>
+    <div id="local-file-container">
+      <span id="local-file-static-label">Local SWF:</span>
+      <input accept=".swf,.spl" id="local-file" aria-describedby="local-file-static-label" type="file">
+      <button id="local-file-label">Select File</button>
+      <label id="local-file-name" for="local-file">No file selected.</label>
+    </div>
     <div id="info-container">
       <div><span>Uncompressed Length</span><span id="uncompressedLength">39Kb</span></div>
       <div><span>SWF Version</span><span id="swfVersion">15</span></div>
@@ -93,5 +105,37 @@
       <div><span>SWF Background Color</span><span id="backgroundColor" style="background-color: rgb(49, 73, 125);"></span></div>
     </div>
   </div>
+
+  <script>
+    const fileInput = document.getElementById('local-file');
+    const player = document.getElementById('player');
+    const localFileNameLabel = document.getElementById('local-file-name');
+
+    // Function to handle file selection
+    fileInput.addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (file && file.name.endsWith('.swf')) {
+        localFileNameLabel.textContent = file.name;
+
+        // Create a URL for the local file and set it to the player
+        const fileURL = URL.createObjectURL(file);
+        player.setAttribute('src', fileURL);
+      } else {
+        localFileNameLabel.textContent = 'No file selected.';
+      }
+    });
+
+    // Handle web URL input
+    const webUrlForm = document.getElementById('web-url-form');
+    const webUrlInput = document.getElementById('web-url');
+    
+    webUrlForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const url = webUrlInput.value;
+      if (url && url.endsWith('.swf')) {
+        player.setAttribute('src', url);
+      }
+    });
+  </script>
 </body>
 </html>
