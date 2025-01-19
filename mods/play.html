@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="https://ruffle.rs/demo//icon32.png" sizes="32x32">
+  <link rel="icon" href="https://ruffle.rs/demo//icon180.png" sizes="180x180">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Player</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    #nav {
+      background-color: #333;
+      color: white;
+      padding: 0.5em 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 1em;
+    }
+    #nav a:hover {
+      text-decoration: underline;
+    }
+    #nav #logo-container img {
+      height: 40px;
+    }
+    #main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1em;
+      background-color: #f4f4f4;
+    }
+    #player-container {
+      width: 100%;
+      max-width: 800px;
+      background: #000;
+      border: 1px solid #ccc;
+      padding: 1em;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    #info-container {
+      margin-top: 1em;
+      background: #fff;
+      padding: 1em;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      width: 100%;
+    }
+    #info-container div {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5em 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav">
+    <a id="logo-container" href="https://ruffle.rs/" target="_blank">
+      <img class="logo" alt="Ruffle" src="https://ruffle.rs/demo/logo.svg">
+    </a>
+    <nav>
+      <a href="#player-container">Player</a>
+      <a href="#info-container">Info</a>
+      <a href="https://ruffle.rs/" target="_blank">About</a>
+    </nav>
+  </div>
+  <div id="main">
+    <div id="player-container">
+      <div id="overlay"></div>
+      <ruffle-player id="player"></ruffle-player>
+    </div>
+    <div id="info-container">
+      <div><span>Uncompressed Length</span><span id="uncompressedLength">39Kb</span></div>
+      <div><span>SWF Version</span><span id="swfVersion">15</span></div>
+      <div><span>FP Version</span><span id="flashVersion">11.2</span></div>
+      <div><span>ActionScript 3</span><span id="isActionScript3">false</span></div>
+      <div><span>Total Frames</span><span id="numFrames">1</span></div>
+      <div><span>Frame Rate</span><span id="frameRate">30</span></div>
+      <div><span>SWF Width</span><span id="width">600</span></div>
+      <div><span>SWF Height</span><span id="height">400</span></div>
+      <div><span>SWF Background Color</span><span id="backgroundColor" style="background-color: rgb(49, 73, 125);"></span></div>
+    </div>
+  </div>
+</body>
+</html>
