@@ -85,7 +85,8 @@ th {
         background-color: #181A1B;
     }
     a {
-        color: rgb(113, 227, 180);
+        /*color: rgb(113, 227, 180);*/
+        color: rgb(0, 102, 255);
         text-decoration: none;
     }
     .topnav {
@@ -107,7 +108,8 @@ th {
         
     }
     .topnav a.active {
-        color: rgb(113, 227, 180);
+        /*color: rgb(113, 227, 180);*/
+        color: rgb(0, 102, 255);
     }
 
     .table-container {
