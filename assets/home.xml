@@ -1,0 +1,11 @@
+<vbox width="100%" style="position: absolute; clip:true;">
+    <menubar width="100%" id="navbar">
+        <button text="Home" id="home"/>
+        <button text="Projects" id="projects"/>
+        <button text="Wiki" id="wiki"/>
+    </menubar>
+    <box width="100%" style="padding: 10px;">
+        <label width="100%" text="Hello! I am dyzqy, also known as Denine. I am a programmer, currently doing my fouth year of Computer Science in High School. I started learning programming in 2020~, and I started by modding flash games. Specifically **Stick War II: The Order Empire**." />
+        
+    </box>
+</vbox>

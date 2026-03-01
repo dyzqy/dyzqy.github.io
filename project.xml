@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="dyzqy.github.io" package="com.sample.name" version="1.0.0" company="Company Name" />
+	<app main="Main" path="export" file="personal-site" />
+	
+	<source path="src" />
+	
+	<haxelib name="openfl" />
+
+	<haxelib name="haxeui-core" />
+	<haxelib name="haxeui-openfl" />
+
+	<window allow-high-dpi="true" />
+
+	<assets path="assets" rename="assets" />
+	
+</project>
